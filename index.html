@@ -3,10 +3,40 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Erittäin mielenkiintoinen title</title>
+	<link href="muotoilu.css" rel="stylesheet">
 </head>
 <body>
-	<h1>No moro</h1>
-	<p>Täs vähä tekstii github kokeiluu varten yahhoo</p>
+	
+	<header>
+		<h1>Kaupunkipyöräkartta</h1>
+	</header>
+	<nav>
+		<ul id='menu'>
+			<li>
+				<a href>Tekijöiden tiedot</a> 
+			</li>
+			<li>
+				<a href>Tietoja tästä sovelluksesta</a> 
+			</li>
+		</ul>
+	</nav>
+	<div id="kartta"></div>
+	
+	<main>
+	<article>
+		<h2>Reittihaku</h2>
+			  
+		<!--reititysominaisuudelle joko input fieldit tai sit se et vaa karttaa klikkaamal voi valita määränpään? -->
+		<input id="from" type="text" placeholder="Lähtöpaikka"> 
+		<!--tolle lähtöpaikka inputille joku pikavaoihtoehto "käytä nykyistä sijaintia?"-->
+		<input id="where to" type="text" placeholder="Syötä määränpää">
+		<button id="hakunappi">Hae reittiä</button>
+
+		<p id="bikeinfo"></p>
+		
+	</article>
+	</main>
+	
 
 </body>
 </html>

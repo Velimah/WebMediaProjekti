@@ -1,0 +1,52 @@
+header {
+    display: block;
+    
+    padding: 20px;
+    
+}
+
+h1 {
+    font-size: 35px;
+    /*font-family: ; 
+    color: ;*/
+    text-align: center;
+
+}
+
+nav {
+    display: block;
+}
+
+#menu {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: large;
+    justify-content: space-evenly;
+    margin: 40px 0;
+    background-color: darkcyan;
+    padding: 20px;
+}
+
+#menu li {
+    display: block;
+    background-color: lightblue;
+    padding: 10px;
+    margin:  0 5px;
+}
+
+#kartta {
+    display: block;
+    display: flex;
+    
+    margin: 5px;
+    padding: 5px;
+}
+
+body {
+    background-color: azure;
+}
+
+h2 {
+    
+}
