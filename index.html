@@ -1,42 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="UTF-8">
-	<title>Erittäin mielenkiintoinen title</title>
-	<link href="muotoilu.css" rel="stylesheet">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kaupunkipyörät</title>
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="vetovalikko.css" />
+	<script type="module" src="main.js"></script>
 </head>
 <body>
-	
-	<header>
-		<h1>Kaupunkipyöräkartta</h1>
-	</header>
-	<nav>
-		<ul id='menu'>
-			<li>
-				<a href>Tekijöiden tiedot</a> 
-			</li>
-			<li>
-				<a href>Tietoja tästä sovelluksesta</a> 
-			</li>
-		</ul>
-	</nav>
-	<div id="kartta"></div>
-	
-	<main>
+<div id="ylapalkki">
+	<h1>Kaupunkipyörät</h1>
+	<div id="valikko">
+		<nav>
+			<ul id="Menu">
+				<li><a href="index.html">Koti</a></li>
+				<li><a href="tilastot.html">Tilastot</a></li>
+				<li><a href="kuvat.html">Kuvat</a></li>
+				<li><a href="video.html">Video</a></li>
+				<li><a href="tekijat.html">Tekijät</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="dropdown">
+		<button class="dropbtn">Valikko</button>
+		<div class="dropdown-content">
+			<a href="index.html">Koti</a>
+			<a href="tilastot.html">Tilastot</a>
+			<a href="kuvat.html">Kuvat</a>
+			<a href="video.html">Video</a>
+			<a href="tekijat.html">Tekijät</a>
+		</div>
+	</div>
+</div>
+<img src="kuva.jpg" alt="kuva">
+<p>Kaupunkipyörät eli lyhyeksi ajaksi lainattavat yhteiskäyttöpyörät on nostettu entistä vahvemmin esille kaupunkien liikennestrategioissa ja liikennejärjestelmäsuunnitelmissa. Kiinnostusta on lisännyt myös Helsingin paljon myönteistä palautetta saanut kaupunkipyöräjärjestelmä.
+
+	─ Esityksen mukaan kaupunkipyöräjärjestelmän tulee olla yhteensopiva joukkoliikenteen maksujärjestelmän kanssa. Selvityksessä esitetään, että kukin kohdekaupunki vie kaupunkikohtaisen ratkaisumallin hallinnolliseen käsittelyyn, jossa voidaan linjata kaupunkipyöräjärjestelmän mahdollisesta toteuttamisesta, kertoo kestävän liikenteen asiantuntija Kati Hyvärinen Liikennevirastosta.
+
+	Kaupunkipyöräjärjestelmällä halutaan tukea liikennejärjestelmän kehittämisen tavoitteita, tarjota lisää mahdollisuuksia liikkua kestävästi sekä lisätä kaupungin vetovoimaisuutta ja brändiä. Järjestelmä edistää nykyaikaisen tiiviin ja eheän kaupunkirakenteen elinvoimaisuutta ja saavutettavuutta.
+
+	─ Kaupunkipyöräjärjestelmä on ensisijaisesti palvelu ja vetovoimatekijä kaupungille. Toiminnan onnistumisen edellytys on, että järjestelmä on laadukas heti alusta alkaen. Kaupunkien liikennejärjestelmän ja kestävän liikenteen kehittämisen tavoitteet ovat korkeita, toteaa selvityksestä vastannut suunnittelupäällikkö Reijo Vaarala Rambollista. </p>
+<main>
 	<article>
 		<h2>Reittihaku</h2>
-			  
+
 		<!--reititysominaisuudelle joko input fieldit tai sit se et vaa karttaa klikkaamal voi valita määränpään? -->
-		<input id="from" type="text" placeholder="Lähtöpaikka"> 
+		<input id="from" type="text" placeholder="Lähtöpaikka">
 		<!--tolle lähtöpaikka inputille joku pikavaoihtoehto "käytä nykyistä sijaintia?"-->
 		<input id="where to" type="text" placeholder="Syötä määränpää">
 		<button id="hakunappi">Hae reittiä</button>
 
 		<p id="bikeinfo"></p>
-		
-	</article>
-	</main>
-	
 
+	</article>
+	<div id="map"></div>
+</main>
+<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfj6i_jiL8vdrGEJO1wUCY0d-Q0L398cY&callback=initMap&v=weekly"></script>
 </body>
 </html>
