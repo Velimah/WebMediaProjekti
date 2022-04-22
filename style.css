@@ -1,20 +1,18 @@
 @font-face {
-    font-family: myFirstFont;
+    font-family: GalanoClassic;
     src: url(GalanoClassic-Regular.woff2);
 }
 
 body {
-    font-family: myFirstFont,sans-serif;
-
+    font-family: GalanoClassic,sans-serif;
 }
 
 h1{
     text-align: center;
     font-size: 50px;
 }
-
 #map {
-    height: 500px;
+    height: 400px;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -22,22 +20,21 @@ h1{
 
 ul {
     list-style: none;
-
 }
+
 #valikko {
     height: 100%;
     display: table;
     margin: 30px auto;
 
 }
-p {
+#maintext {
     margin: 70px 25%;
     line-height: 30px;
     text-wrap: avoid;
 }
 
-#Menu {
-
+#menu {
     margin: 10px;
     width: 100%;
     font-size: 30px;
@@ -53,11 +50,11 @@ li {
     margin-left: auto;
     margin-right: auto;
 }
-img {
+#paakuva {
     width: 100%;
     margin-top: 200px;
 }
-#Menu a {
+#menu a{
     display:block;
     padding:3px;
     background-color:#fff;
@@ -70,13 +67,10 @@ img {
     width: 100%;
     z-index: 999;
     background-color: #ffffff;
-
 }
 
-#Menu a:hover {
+#menu a:hover {
     background-color: rgba(255, 255, 255, 0.7);
     color: #0000ff;
     text-decoration: underline;
-
-
 }

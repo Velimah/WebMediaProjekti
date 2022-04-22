@@ -6,6 +6,7 @@ async function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
       zoom: 14,
       center: koti,
+      controlSize: 32,
       options: {
         gestureHandling: 'greedy'
       }
