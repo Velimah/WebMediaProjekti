@@ -6,9 +6,7 @@ async function initMap() {
       mapTypeId: 'hybrid',
       zoom: 14,
       controlSize: 32,
-      options: {
-        gestureHandling: 'greedy'
-      }
+
     });
 
     navigator.geolocation.getCurrentPosition(

@@ -20,6 +20,7 @@ h1{
 
 ul {
     list-style: none;
+    padding: 0;
 }
 
 #valikko {
@@ -63,7 +64,10 @@ li {
 }
 #ylapalkki {
     position: fixed;
-    margin-top: -8px;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 222px;
     width: 100%;
     z-index: 999;
     background-color: #ffffff;
@@ -83,7 +87,7 @@ li {
 }
 
 @media (max-width:860px) {
-#valikko   {
+#menu   {
     display: none;
 }
 
