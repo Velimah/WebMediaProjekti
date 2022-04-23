@@ -74,3 +74,15 @@ li {
     color: #0000ff;
     text-decoration: underline;
 }
+
+@media (max-width:860px) {
+#valikko   {
+    display: none;
+}
+
+}
+@media (min-width:860px) {
+    .dropdown {
+        display: none;
+    }
+}
