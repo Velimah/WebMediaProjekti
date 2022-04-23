@@ -3,6 +3,7 @@ async function initMap() {
   try{
 
     const map = new google.maps.Map(document.getElementById("map"), {
+      mapTypeId: 'hybrid',
       zoom: 14,
       controlSize: 32,
       options: {
@@ -17,7 +18,7 @@ async function initMap() {
           lng: position.coords.longitude,
         };
 
-        const locationMark = 'blueMarker.png';
+        const locationMark = 'img/blueMarker.png';
 
         const merkki = new google.maps.Marker({
           position: new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
@@ -48,14 +49,14 @@ async function initMap() {
         map.setCenter(pos);
       });
 
-    const vastaus = await fetch('asemat.geojson');
+    const vastaus = await fetch('data/asemat.geojson');
     if (!vastaus.ok) throw new Error('Hups, joku hajosi');
     const tiedot = await vastaus.json();
     console.log('KaupunkipyoraAsemat', tiedot);
 
     for (let i = 0; i < tiedot.features.length; i++) {
 
-      const stationMark = 'stationMarker.png';
+      const stationMark = 'img/stationMarker.png';
 
       const merkki = new google.maps.Marker({
         position: new google.maps.LatLng(tiedot.features[i].properties.y, tiedot.features[i].properties.x),
