@@ -21,27 +21,25 @@ async function HaeTilastot() {
       kokonaisKesto = kokonaisKesto + tiedot[i]["Duration (sec.)"];
     }
 
-    const kilometrit = kokonaisMatka/1000;
-    const kilometrit2 = Math.trunc(kilometrit).toLocaleString();
+    const kilometrit = Math.trunc(kokonaisMatka/1000);
 
-    const tunnit = kokonaisKesto/3600;
-    const tunnit2 = Math.trunc(tunnit).toLocaleString();
+    const tunnit = Math.trunc(kokonaisKesto/3600);
 
-    const matkojenMaara = tiedot.length;
-    const maara = matkojenMaara.toLocaleString();
+    const maara = tiedot.length;
 
-    const keskimMatka = Math.trunc(kokonaisMatka / matkojenMaara);
-    const keskimAika = Math.trunc(kokonaisKesto / 60 / matkojenMaara);
+    const keskimMatka = Math.trunc(kokonaisMatka / maara);
+
+    const keskimAika = Math.trunc(kokonaisKesto / 60 / maara);
 
     console.log("Huhtikuu:");
-    console.log("  Ajetut kilometrit: " + kilometrit2 + " km");
-    console.log("  Ajetut tunnit: " + tunnit2 + " h");
+    console.log("  Ajetut kilometrit: " + kilometrit + " km");
+    console.log("  Ajetut tunnit: " + tunnit + " h");
     console.log("  Matkojen määrä: " + maara + " kpl");
     console.log("  Matkojen keskimääräinen pituus: " + keskimMatka + " m");
     console.log("  Matkojen keskimääräinen kesto: " + keskimAika + " min");
 
     const xArray = ["Huhtikuu", "Toukokuu", "Kesäkuu", "Heinäkuu", "Elokuu", "Syyskuu", "Lokakuu"];
-    const yArray = [kilometrit2, 995542, 1484674, 1452262, 978603, 663766, 416101];
+    const yArray = [kilometrit, 995542, 1484674, 1452262, 978603, 663766, 416101];
 
     const data = [{
       x:xArray,
@@ -55,7 +53,7 @@ async function HaeTilastot() {
 
 
     const xArray2 = ["Huhtikuu", "Toukokuu", "Kesäkuu", "Heinäkuu", "Elokuu", "Syyskuu", "Lokakuu"];
-    const yArray2 = [tunnit2, 115206, 185796, 179194, 115546, 82208, 0];
+    const yArray2 = [tunnit, 115206, 185796, 179194, 115546, 82208, 0];
 
     const data2 = [{
       x:xArray2,
