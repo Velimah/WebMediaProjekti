@@ -2,14 +2,18 @@
     font-family: GalanoClassic;
     src: url(GalanoClassic-Regular.woff);
 }
-
+html, body {
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: GalanoClassic,sans-serif;
 }
 
 h1{
     text-align: center;
-    font-size: 50px;
+    font-size: 45px;
+    margin: 30px;
 }
 #map {
     height: 600px;
@@ -67,7 +71,7 @@ li {
     top: 0;
     left: 0;
     right: 0;
-    height: 222px;
+    height: 208px;
     width: 100%;
     z-index: 999;
     background-color: #ffffff;
