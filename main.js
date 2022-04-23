@@ -55,8 +55,11 @@ async function initMap() {
 
     for (let i = 0; i < tiedot.features.length; i++) {
 
+      const stationMark = 'stationMarker.png';
+
       const merkki = new google.maps.Marker({
         position: new google.maps.LatLng(tiedot.features[i].properties.y, tiedot.features[i].properties.x),
+        icon: stationMark,
         map: map
       });
 
