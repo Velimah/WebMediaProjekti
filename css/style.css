@@ -24,7 +24,7 @@ ul {
 }
 
 #valikko {
-    height: 100%;
+
     display: table;
     margin: 30px auto;
 
@@ -59,7 +59,7 @@ li {
     display:block;
     padding:3px;
     background-color:#fff;
-    color: rgba(0, 0, 255, 0.5);
+    color: rgba(0, 0, 255, 0.7);
     text-decoration: none;
 }
 #ylapalkki {
@@ -71,6 +71,7 @@ li {
     width: 100%;
     z-index: 999;
     background-color: #ffffff;
+    box-shadow: 0 0 10px #ccc;
 }
 
 #menu a:hover {
@@ -86,13 +87,13 @@ li {
 
 }
 
-@media (max-width:860px) {
+@media (max-width:800px) {
 #menu   {
     display: none;
 }
 
 }
-@media (min-width:860px) {
+@media (min-width:800px) {
     .dropdown {
         display: none;
     }
