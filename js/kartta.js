@@ -53,7 +53,10 @@ async function initMap() {
     // Hakee asemat.geojson tiedostosta kaupunkipyöräasemien tiedot, luo merkit ja infoikkunat jokaiselle asemalle
     // ja luo listenerit hiirelle, että infoikkunat aukeaa hiiren ollessa merkkien päällä.
     const vastaus = await fetch('data/asemat.geojson');
-    if (!vastaus.ok) throw new Error('Hups, joku hajosi');
+    if (!vastaus.ok)  {
+      return Promise.reject(Error("Hups, rikki meni."));
+    }
+
     const asemat = await vastaus.json();
 
     console.log('KaupunkipyoraAsemat', asemat);
