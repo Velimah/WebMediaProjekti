@@ -1,7 +1,8 @@
-
+// Google maps initialisaatio.
 async function initMap() {
   try{
 
+    // Luo kartan ja asettaa perusasetukset.
     const map = new google.maps.Map(document.getElementById("map"), {
       mapTypeId: 'hybrid',
       zoom: 14,
@@ -9,6 +10,8 @@ async function initMap() {
 
     });
 
+    // Hakee käyttäjän koordinaatit, asettaa merkin infoikkunalla kartalle ja luo listenerit hiirelle,
+    // että infoikkuna aukeaa hiiren ollessa merkin päällä.
     navigator.geolocation.getCurrentPosition(
       (position) => {
         const pos = {
@@ -47,6 +50,8 @@ async function initMap() {
         map.setCenter(pos);
       });
 
+    // Hakee asemat.geojson tiedostosta kaupunkipyöräasemien tiedot, luo merkit ja infoikkunat jokaiselle asemalle
+    // ja luo listenerit hiirelle, että infoikkunat aukeaa hiiren ollessa merkkien päällä.
     const vastaus = await fetch('data/asemat.geojson');
     if (!vastaus.ok) throw new Error('Hups, joku hajosi');
     const asemat = await vastaus.json();
