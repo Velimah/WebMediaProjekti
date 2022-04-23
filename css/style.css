@@ -75,6 +75,13 @@ li {
     text-decoration: underline;
 }
 
+#reittihaku {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
 @media (max-width:860px) {
 #valikko   {
     display: none;
