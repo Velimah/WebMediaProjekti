@@ -2,15 +2,51 @@
 async function initMap() {
   try{
 
-    const koti = { lat: 60.2, lng: 24.9 };
     const map = new google.maps.Map(document.getElementById("map"), {
       zoom: 14,
-      center: koti,
       controlSize: 32,
       options: {
         gestureHandling: 'greedy'
       }
     });
+
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        const pos = {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude,
+        };
+
+        const locationMark = 'blueMarker.png';
+
+        const merkki = new google.maps.Marker({
+          position: new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
+          icon: locationMark,
+          map: map
+        });
+
+        const popupIkkuna = new google.maps.InfoWindow({
+          content: '<h3>Oma sijainti</h3>'
+        });
+
+        merkki.addListener("mouseover", () => {
+          popupIkkuna.open({
+            anchor: merkki,
+            map,
+            shouldFocus: false,
+          });
+        });
+
+        merkki.addListener("mouseout", () => {
+          popupIkkuna.close({
+            anchor: merkki,
+            map,
+            shouldFocus: false,
+          });
+        });
+
+        map.setCenter(pos);
+      });
 
     const vastaus = await fetch('asemat.geojson');
     if (!vastaus.ok) throw new Error('Hups, joku hajosi');
