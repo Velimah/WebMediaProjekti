@@ -9,3 +9,17 @@
 .container div {
     max-width:600px;
 }
+
+#tilastotInfo p{
+   
+    text-align: center;
+    font-size: large;
+    margin: 50px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    
+}
+

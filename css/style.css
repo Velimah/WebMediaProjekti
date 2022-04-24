@@ -8,6 +8,7 @@ html, body {
 }
 body {
     font-family: GalanoClassic,sans-serif;
+    background-color: #a8d0db;
 }
 
 h1{
@@ -20,6 +21,7 @@ h1{
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
 }
 
 ul {
