@@ -21,7 +21,7 @@ main {
     height: 200px;
 }
 .box2 {
-    padding: 30px;
+    padding: 40px;
     width: 430px;
 }
 .henkilokuva {
@@ -29,7 +29,7 @@ main {
     width: 200px;
 }
 .nimi {
-    margin-top: 15px;
+    margin-top: 5px;
     margin-bottom: 5px;
 }
 .ammatti {

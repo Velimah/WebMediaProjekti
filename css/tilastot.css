@@ -1,5 +1,11 @@
 .container {
+    max-width: 90%;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.container div {
+    max-width:600px;
 }

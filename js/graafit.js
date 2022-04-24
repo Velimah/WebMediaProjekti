@@ -38,6 +38,7 @@ async function HaeTilastot() {
     console.log("  Matkojen keskimääräinen pituus: " + keskimMatka + " m");
     console.log("  Matkojen keskimääräinen kesto: " + keskimAika + " min");
 
+    // luodaan graafi jokaiselle kuukaudelle käyttäen apuna plot.ly kirjastoja.
     const xArray = ["Huhtikuu", "Toukokuu", "Kesäkuu", "Heinäkuu", "Elokuu", "Syyskuu", "Lokakuu"];
     const yArray = [kilometrit, 995542, 1484674, 1452262, 978603, 663766, 416101];
 
