@@ -15,7 +15,8 @@ main {
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 20px #ccc;
+    background-color: #ffffff;
 }
 .box1 {
     height: 200px;
