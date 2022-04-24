@@ -99,6 +99,7 @@ async function initMap() {
       });
 
     }
+  
 
   } catch (error) {
     console.log(error)
@@ -106,3 +107,26 @@ async function initMap() {
 }
 
 window.initMap = initMap;
+
+/*const apiUrl = 'https://cdn.digitransit.fi/map/v2/:finland-citybike-map/:14/';
+
+const getBikeData = async () => {
+  try {
+    let x = position.coords.longitude;
+    let y = potition.coords.latitude;
+    const response = await fetch(apiUrl +':' + x + '/:' + y + '.pbf');
+
+    if (!response.ok){
+      throw new Error(response.status + response.statusText);
+    }
+
+    console.log('bike', response);
+    const data = await response.json();
+    console.log('bikeData', data);
+
+  } catch (error){
+    console.error('fetch failed', error);
+  } 
+}
+
+getBikeData();*/
