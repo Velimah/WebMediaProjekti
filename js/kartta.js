@@ -14,7 +14,7 @@ async function initMap() {
     // että infoikkuna aukeaa hiiren ollessa merkin päällä.
     navigator.geolocation.getCurrentPosition(
       (position) => {
-        const pos = {
+        const sijainti = {
           lat: position.coords.latitude,
           lng: position.coords.longitude,
         };
@@ -22,7 +22,7 @@ async function initMap() {
         const locationMark = 'img/redMarker.png';
 
         const merkki = new google.maps.Marker({
-          position: new google.maps.LatLng(pos),
+          position: new google.maps.LatLng(sijainti),
           icon: locationMark,
           map: map
         });
@@ -47,7 +47,7 @@ async function initMap() {
           });
         });
 
-        map.setCenter(pos);
+        map.setCenter(sijainti);
       });
 
     // Hakee asemat.geojson tiedostosta kaupunkipyöräasemien tiedot, luo merkit ja infoikkunat jokaiselle asemalle
@@ -63,11 +63,11 @@ async function initMap() {
 
     for (let i = 0; i < asemat.features.length; i++) {
 
-      const stationMark = 'img/stationMarker.png';
+      const asemaMerkki = 'img/stationMarker.png';
 
       const merkki = new google.maps.Marker({
         position: new google.maps.LatLng(asemat.features[i].properties.y, asemat.features[i].properties.x),
-        icon: stationMark,
+        icon: asemaMerkki,
         map: map
       });
 
@@ -78,12 +78,12 @@ async function initMap() {
         '<h3>Kapasiteetti: '+asemat.features[i].properties.Kapasiteet+'</h3>' +
         '</div>';
 
-      const popupIkkuna = new google.maps.InfoWindow({
+      const infoIkkuna = new google.maps.InfoWindow({
         content: asemanTiedot,
       });
 
       google.maps.event.addListener(merkki,'mouseover',function() {
-        popupIkkuna.open({
+        infoIkkuna.open({
           anchor: merkki,
           map,
           shouldFocus: false,
@@ -91,7 +91,7 @@ async function initMap() {
       });
 
       google.maps.event.addListener(merkki,'mouseout',function() {
-        popupIkkuna.close({
+        infoIkkuna.close({
           anchor: merkki,
           map,
           shouldFocus: false,
