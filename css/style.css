@@ -18,7 +18,7 @@ h1{
 }
 #map {
     height: 600px;
-    width: 80%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
@@ -36,7 +36,8 @@ ul {
 
 }
 #maintext {
-    margin: 70px 25%;
+    max-width: 60%;
+    margin: 70px auto;
     line-height: 30px;
     text-wrap: avoid;
 }
@@ -87,14 +88,14 @@ li {
 }
 
 #reittihaku {
-    width: 80%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
 }
 
 #saaNimi {
     position: relative;
-    left: 10%;
+    left: 20%;
     width: 300px;
     margin-bottom: 0;
     border-bottom: 1px solid black;
@@ -102,7 +103,7 @@ li {
 #container {
     display: flex;
     flex-direction: row;
-    max-width: 80%;
+    max-width: 60%;
     margin-left: auto;
     margin-right: auto;
     justify-content: left;
