@@ -78,7 +78,7 @@ li {
     width: 100%;
     z-index: 999;
     background-color: #ffffff;
-    box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 20px #ccc;
 }
 
 #menu a:hover {
@@ -120,7 +120,24 @@ li {
     margin-bottom: 3px;
     margin-left: 20px;
 }
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    z-index: 999;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px #ccc;
+}
 
+footer img {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+}
 @media (max-width:800px) {
 #menu   {
     display: none;

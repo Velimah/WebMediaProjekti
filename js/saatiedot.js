@@ -18,7 +18,7 @@ async function Saatiedot() {
     const saaTiedot = await vastaus.json();
     console.log('saaTiedot', saaTiedot);
 
-    const aika = new Date().toLocaleTimeString([], {day:"numeric", month: 'numeric', hour12 : false, hour: '2-digit', minute:'2-digit'});
+    const aika = new Date().toLocaleTimeString('fi', {day:"numeric", month: 'numeric', hour12 : false, hour: '2-digit', minute:'2-digit'});
 
     document.getElementById('saaNimi').innerHTML =
     saaTiedot.name+'&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp'+aika;
