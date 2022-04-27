@@ -31,7 +31,7 @@ async function initMap() {
           content: '<h3>Olet tässä</h3>'
         });
 
-        merkki.addListener("mouseover", () => {
+        google.maps.event.addListener(merkki,'mouseover',function() {
           popupIkkuna.open({
             anchor: merkki,
             map,
@@ -39,7 +39,7 @@ async function initMap() {
           });
         });
 
-        merkki.addListener("mouseout", () => {
+        google.maps.event.addListener(merkki,'mouseout',function() {
           popupIkkuna.close({
             anchor: merkki,
             map,
@@ -82,7 +82,7 @@ async function initMap() {
         content: asemanTiedot,
       });
 
-      merkki.addListener("mouseover", () => {
+      google.maps.event.addListener(merkki,'mouseover',function() {
         popupIkkuna.open({
           anchor: merkki,
           map,
@@ -90,7 +90,7 @@ async function initMap() {
         });
       });
 
-      merkki.addListener("mouseout", () => {
+      google.maps.event.addListener(merkki,'mouseout',function() {
         popupIkkuna.close({
           anchor: merkki,
           map,

@@ -90,33 +90,34 @@ li {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+}
 
+#saaNimi {
+    position: relative;
+    left: 5%;
+    width: 300px;
+    margin-bottom: 0;
+    border-bottom: 1px solid black;
 }
 #container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
-}
-.cell {
-    display: flex;
-    flex-direction: row;
-}
-#saaNimi h2{
-    margin-top: 0;
-    margin-left: 15px;
-    margin-bottom: 5px;
+    justify-content: left;
 }
 #ikoni {
     text-align: center;
+    margin-top: -15px;
   }
-#ikoni h2 {
-    margin-top: 15px;
-    margin-bottom: 0;
+#ikoni p {
+    margin-top: -20px;
 }
 #saaTiedot p{
-    margin: 2px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 20px;
 }
 
 @media (max-width:800px) {
