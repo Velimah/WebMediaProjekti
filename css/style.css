@@ -92,6 +92,32 @@ li {
     margin-right: auto;
 
 }
+#container {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cell {
+    display: flex;
+    flex-direction: row;
+}
+#saaNimi h2{
+    margin-top: 0;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+#ikoni {
+    text-align: center;
+  }
+#ikoni h2 {
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+#saaTiedot p{
+    margin: 2px;
+}
 
 @media (max-width:800px) {
 #menu   {

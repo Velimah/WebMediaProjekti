@@ -130,3 +130,4 @@ const getBikeData = async () => {
 }
 
 getBikeData();*/
+
