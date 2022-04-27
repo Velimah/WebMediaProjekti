@@ -1,0 +1,35 @@
+#kuvat{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+}
+
+#setti{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+#kuva {
+    padding: 15px;
+    
+}
+
+#teksti{
+    max-width: 40%;
+    padding-left: 5px;
+    margin: auto;
+}
+
+@media (max-width:1300px){
+
+    #teksti{
+        min-width: 700px;
+        margin: auto;
+        padding-bottom: 40px;
+        padding-left: 0;
+    }
+}
