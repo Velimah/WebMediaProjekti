@@ -1,13 +1,9 @@
 #videoteksti {
     max-width: 1000px;
-    padding-left: 30px;
-    padding-right: 30px;
     margin: 30px auto;
     line-height: 30px;
 }
 #video {
     max-width: 1000px;
-    padding-left: 30px;
-    padding-right: 30px;
     margin: 30px auto;
 }
