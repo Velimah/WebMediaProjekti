@@ -1,3 +1,6 @@
-.container div{
-    margin-bottom: 30px;
+section {
+    max-width: 1000px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 30px auto;
 }

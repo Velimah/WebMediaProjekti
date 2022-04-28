@@ -15,7 +15,7 @@
 
 <header id="ylapalkki">
 
-	<h1>Kaupunkipyörät</h1>
+	<h1 id="otsikko">Kaupunkipyörät</h1>
 
 	<div id="valikko">
 		<nav>
@@ -43,36 +43,40 @@
 </header>
 
 <main>
-<img id="paakuva" src="img/kuva.jpg" alt="kuva">
-	<p id="maintext">Kaupunkipyörät eli lyhyeksi ajaksi lainattavat yhteiskäyttöpyörät on nostettu entistä vahvemmin esille kaupunkien liikennestrategioissa ja liikennejärjestelmäsuunnitelmissa. Kiinnostusta on lisännyt myös Helsingin paljon myönteistä palautetta saanut kaupunkipyöräjärjestelmä.
-
-	─ Esityksen mukaan kaupunkipyöräjärjestelmän tulee olla yhteensopiva joukkoliikenteen maksujärjestelmän kanssa. Selvityksessä esitetään, että kukin kohdekaupunki vie kaupunkikohtaisen ratkaisumallin hallinnolliseen käsittelyyn, jossa voidaan linjata kaupunkipyöräjärjestelmän mahdollisesta toteuttamisesta, kertoo kestävän liikenteen asiantuntija Kati Hyvärinen Liikennevirastosta.
-
-	Kaupunkipyöräjärjestelmällä halutaan tukea liikennejärjestelmän kehittämisen tavoitteita, tarjota lisää mahdollisuuksia liikkua kestävästi sekä lisätä kaupungin vetovoimaisuutta ja brändiä. Järjestelmä edistää nykyaikaisen tiiviin ja eheän kaupunkirakenteen elinvoimaisuutta ja saavutettavuutta.
-
-	─ Kaupunkipyöräjärjestelmä on ensisijaisesti palvelu ja vetovoimatekijä kaupungille. Toiminnan onnistumisen edellytys on, että järjestelmä on laadukas heti alusta alkaen. Kaupunkien liikennejärjestelmän ja kestävän liikenteen kehittämisen tavoitteet ovat korkeita, toteaa selvityksestä vastannut suunnittelupäällikkö Reijo Vaarala Rambollista. </p>
-
+	<figure>
+		<img id="paakuva" src="img/kuva.jpg" alt="kuva">
+	</figure>
+	<article class="maintext">
+		<h2>Otsikko</h2>
+		<p>Kaupunkipyörät eli lyhyeksi ajaksi lainattavat yhteiskäyttöpyörät on nostettu entistä vahvemmin esille kaupunkien liikennestrategioissa ja liikennejärjestelmäsuunnitelmissa. Kiinnostusta on lisännyt myös Helsingin paljon myönteistä palautetta saanut kaupunkipyöräjärjestelmä.</p>
+		<p>─ Esityksen mukaan kaupunkipyöräjärjestelmän tulee olla yhteensopiva joukkoliikenteen maksujärjestelmän kanssa. Selvityksessä esitetään, että kukin kohdekaupunki vie kaupunkikohtaisen ratkaisumallin hallinnolliseen käsittelyyn, jossa voidaan linjata kaupunkipyöräjärjestelmän mahdollisesta toteuttamisesta, kertoo kestävän liikenteen asiantuntija Kati Hyvärinen Liikennevirastosta. </p>
+		<h3>Väliotsikko</h3>
+		<p>Kaupunkipyöräjärjestelmällä halutaan tukea liikennejärjestelmän kehittämisen tavoitteita, tarjota lisää mahdollisuuksia liikkua kestävästi sekä lisätä kaupungin vetovoimaisuutta ja brändiä. Järjestelmä edistää nykyaikaisen tiiviin ja eheän kaupunkirakenteen elinvoimaisuutta ja saavutettavuutta. </p>
+		<p>─ Kaupunkipyöräjärjestelmä on ensisijaisesti palvelu ja vetovoimatekijä kaupungille. Toiminnan onnistumisen edellytys on, että järjestelmä on laadukas heti alusta alkaen. Kaupunkien liikennejärjestelmän ja kestävän liikenteen kehittämisen tavoitteet ovat korkeita, toteaa selvityksestä vastannut suunnittelupäällikkö Reijo Vaarala Rambollista. </p>
+		<h3>Väliotsikko2</h3>
+		<p>Tampereella monet seikat, kuten riittävän suuri toiminta-alue, sekoittunut kaupunkirakenne, korkeatasoinen ja kehittyvä joukkoliikenne sekä monipuolinen käyttäjäryhmä, tukevat kokonaisvaltaisen kaupunkipyöräjärjestelmän onnistumista. Myös muissa kohdekaupungeissa löytyy paljon järjestelmää tukevia piirteitä, mutta riski pyörien jäämisestä vajaakäytölle on Tamperetta suurempi. Huolellisella suunnittelulla ja toteutuksella myös Oulussa ja Jyväskylässä on edellytykset onnistuneen kokonaisvaltaisen kaupunkipyöräjärjestelmän toteuttamiseen. </p>
+		<p>Selvitykseen osallistuneista kaupungeista Lahdella on vähiten kaupunkipyöräjärjestelmää tukevia piirteitä. Kaupunkiin voisikin alkuvaiheessa soveltua paremmin esimerkiksi tiettyjä liikennekäytäviä palveleva yhteisöllinen kaupunkipyöräjärjestelmä. Tämä tosin edellyttää, että yhteisöllisten kaupunkipyörien paikannusjärjestelmät mahdollistavat pyörän palauttamisen useaan paikkaan. </p>
+	</article>
 	<article id="reittihaku">
 		<h2>Reittihaku</h2>
 
 		<!--reititysominaisuudelle joko input fieldit tai sit se et vaa karttaa klikkaamal voi valita määränpään? -->
 		<input id="from" type="text" placeholder="Lähtöpaikka">
 		<!--tolle lähtöpaikka inputille joku pikavaoihtoehto "käytä nykyistä sijaintia?"-->
-		<input id="where to" type="text" placeholder="Syötä määränpää">
+		<input id="whereto" type="text" placeholder="Syötä määränpää">
 		<button id="hakunappi">Hae reittiä</button>
 
 		<p id="bikeinfo"></p>
 
 	</article>
-	<h2 id="saaNimi"></h2>
-	<div id="container"></div>
-	<div id="map"></div>
+	<section id="saa"></section>
+	<section id="map"></section>
+
 </main>
 <footer>
 	<a href="https://fi-fi.facebook.com/helsinginseudunliikenne/"><img src="img/facebook.png" alt="HSL Facebook sivu"></a>
 	<a href="https://www.instagram.com/explore/tags/kaupunkipy%C3%B6r%C3%A4/?hl=fi"><img src="img/instagram.png" alt="Instagram kaupunkipyöräkuvat"></a>
 </footer>
-
 <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8cax_WFZlRgcyXs8iHmJUVWG5ue9wmnQ&callback=initMap&v=weekly"></script>
 </body>
 </html>

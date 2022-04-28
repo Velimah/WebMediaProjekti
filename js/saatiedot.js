@@ -20,10 +20,10 @@ async function Saatiedot() {
 
     const aika = new Date().toLocaleTimeString('fi', {day:"numeric", month: 'numeric', hour12 : false, hour: '2-digit', minute:'2-digit'});
 
-    document.getElementById('saaNimi').innerHTML =
-    saaTiedot.name+'&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp'+aika;
+    document.getElementById('saa').innerHTML =
+      '<h2 id="saaNimi">'+saaTiedot.name+'&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp'+aika+'</h2>'+
 
-    document.getElementById('container').innerHTML =
+      '<div id="container">'+
 
       '<div id="ikoni">'+
       '<img src="https://openweathermap.org/img/wn/'+saaTiedot.weather[0].icon+'@2x.png" alt="'+saaTiedot.weather[0].description+'">'+
@@ -35,6 +35,8 @@ async function Saatiedot() {
       '<p> Kosteus: '+saaTiedot.main.humidity+' %</p>'+
       '<p> Tuuli: '+saaTiedot.wind.speed+' m/s</p>'+
       '<p> Paine: '+saaTiedot.main.pressure+' hPa</p>'+
+      '</div>'+
+
       '</div>';
 
 

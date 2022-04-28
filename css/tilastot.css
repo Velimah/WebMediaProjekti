@@ -1,29 +1,17 @@
+
 .container {
-    max-width: 60%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    max-width: 1000px;
+    margin: 30px auto;
 }
-
 .container div {
-    max-width:700px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px auto;
+    max-width: 100%;
 }
-
-#tilastotInfo p{
-   
+#tilastotInfo {
+    margin: 30px auto;
+}
+#tilastotInfo h3{
     text-align: center;
-    font-size: large;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 60%;
-    padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    
+    margin: 30px auto;
 }
 
