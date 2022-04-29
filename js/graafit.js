@@ -54,7 +54,7 @@ const data = [{
   type:"bar"
 }];
 
-const layout = {title:"Ajetut kilometrit"};
+const layout = {title:"Poljetut kilometrit"};
 
 Plotly.newPlot("graafi1", data, layout);
 
@@ -68,7 +68,7 @@ const data2 = [{
   type:"bar"
 }];
 
-const layout2 = {title:"Ajetut tunnit"};
+const layout2 = {title:"Poljetut tunnit"};
 
 Plotly.newPlot("graafi2", data2, layout2);
 
@@ -82,7 +82,7 @@ const data3 = [{
   type:"bar"
 }];
 
-const layout3 = {title:"Ajetut matkat"};
+const layout3 = {title:"Poljetut matkat"};
 
 Plotly.newPlot("graafi3", data3, layout3);
 

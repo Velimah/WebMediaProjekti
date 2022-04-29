@@ -10,18 +10,30 @@ body {
     font-family: GalanoClassic,sans-serif;
     background-color: #a8d0db;
 }
+main {
+    margin-top: 170px;
+    padding: 30px;
+}
 
-h1{
+figure {
+    margin-top: -30px;
+    margin-right: -30px;
+    margin-left: -30px;
+}
+
+#otsikko{
     text-align: center;
     font-size: 45px;
-    margin: 30px;
+    margin: 20px;
 }
 #map {
+    display: flex;
+    flex-wrap: wrap;
     height: 600px;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 1000px;
     margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 ul {
@@ -32,13 +44,15 @@ ul {
 #valikko {
 
     display: table;
-    margin: 30px auto;
+    margin: 20px auto;
 
 }
-#maintext {
-    margin: 70px 25%;
+.maintext {
+    max-width: 1000px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 30px auto;
     line-height: 30px;
-    text-wrap: avoid;
 }
 
 #menu {
@@ -59,7 +73,6 @@ li {
 }
 #paakuva {
     width: 100%;
-    margin-top: 200px;
 }
 #menu a{
     display:block;
@@ -73,11 +86,11 @@ li {
     top: 0;
     left: 0;
     right: 0;
-    height: 208px;
+    height: 170px;
     width: 100%;
     z-index: 999;
     background-color: #ffffff;
-    box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 20px #ccc;
 }
 
 #menu a:hover {
@@ -87,38 +100,58 @@ li {
 }
 
 #reittihaku {
-    width: 90%;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+}
 
+#saaNimi {
+    text-decoration: underline;
+    position: relative;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
 }
 #container {
     display: flex;
-    flex-direction: column;
-    max-width: 90%;
+    flex-direction: row;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-}
-.cell {
-    display: flex;
-    flex-direction: row;
-}
-#saaNimi h2{
-    margin-top: 0;
-    margin-left: 15px;
-    margin-bottom: 5px;
+    justify-content: left;
 }
 #ikoni {
     text-align: center;
+    margin-top: -15px;
   }
-#ikoni h2 {
-    margin-top: 15px;
-    margin-bottom: 0;
+#ikoni p {
+    margin-top: -20px;
 }
 #saaTiedot p{
-    margin: 2px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 20px;
+}
+footer {
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    z-index: 999;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px #ccc;
 }
 
+footer img {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+}
 @media (max-width:800px) {
 #menu   {
     display: none;
