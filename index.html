@@ -6,10 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Kaupunkipyörät</title>
 	<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" id="theme-link"/>
 	<link rel="stylesheet" type="text/css" href="css/vetovalikko.css" />
 	<script defer src="js/kartta.js"></script>
 	<script defer src="js/saatiedot.js"></script>
+	<script src="js/teema.js"></script>
 </head>
 <body>
 
@@ -71,6 +72,15 @@
 	</article>
 	<section id="saa"></section>
 	<section id="map"></section>
+
+	<div class="teemaBtn-container">
+		<div class="vertical">
+			<button onclick="darkMode()" id="teemaBtn">Tumma/Vaalea teema</button>
+		</div>
+	</div>
+		
+	
+
 
 </main>
 <footer>
