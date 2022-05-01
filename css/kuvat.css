@@ -18,20 +18,21 @@
 }
 .setti p {
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 0;
 }
 .teksti{
+
     padding-left: 30px;
-    max-width: 570px;
+    padding-right: 30px;
+    max-width: 540px;
     line-height: 30px;
 }
-
-@media (max-width:1300px){
-
-    #teksti{
-        min-width: 700px;
-        margin: auto;
-        padding-bottom: 30px;
-        padding-left: 0;
+@media (max-width:1080px) {
+    .setti h2 {
+        text-align: center;
     }
+    .teksti {
+        padding-top: 30px;
+    }
+
 }

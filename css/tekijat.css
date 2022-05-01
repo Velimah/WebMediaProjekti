@@ -61,14 +61,26 @@
     color: #0000ff;
     text-decoration: underline;
 }
-@media (max-width:800px) {
-    .box2{
-        text-align: center;
-    }
-}
 
 #yleiskuvaus {
+    line-height: 30px;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+}
+#yleiskuvaus h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+#yleiskuvaus p {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+@media (max-width:800px) {
+    .box2{
+        text-align: center;
+        max-width: 300px;
+        padding: 0;
+    }
 }
