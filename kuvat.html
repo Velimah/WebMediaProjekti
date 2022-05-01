@@ -5,11 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kaupunkipyörät</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" id="theme-link"/>
   <link rel="stylesheet" type="text/css" href="css/vetovalikko.css" />
   <link rel="stylesheet" type="text/css" href="css/kuvat.css" />
   <link href="lightbox2-2.11.3/dist/css/lightbox.css" rel="stylesheet" />
-  
+  <script src="js/teema.js"></script>
 </head>
 
 <body>
@@ -75,10 +75,14 @@
     </div>
     
   </div>
-  
 
 
 
+  <div class="teemaBtn-container">
+    <div class="vertical">
+      <button onclick="darkMode()" id="teemaBtn">Tumma/Vaalea teema</button>
+    </div>
+  </div>
 </main>
 <footer>
   <a href="https://fi-fi.facebook.com/helsinginseudunliikenne/"><img src="img/facebook.png" alt="HSL Facebook sivu"></a>
