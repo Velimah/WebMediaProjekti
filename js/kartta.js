@@ -58,15 +58,11 @@ async function initMap() {
     if (!vastaus.ok)  {
       return Promise.reject(Error("Hups, rikki meni."));
     }
-
     const asemat = await vastaus.json();
-
     console.log('KaupunkipyoraAsemat', asemat);
-
     for (let i = 0; i < asemat.features.length; i++) {
 
       const asemaMerkki = 'img/stationMarker.png';
-
       const merkki = new google.maps.Marker({
         position: new google.maps.LatLng(asemat.features[i].properties.y, asemat.features[i].properties.x),
         icon: asemaMerkki,
@@ -99,9 +95,7 @@ async function initMap() {
           shouldFocus: false,
         });
       });
-
     }
-  
 
   } catch (error) {
     console.log(error)

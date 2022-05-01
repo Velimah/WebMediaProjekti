@@ -21,7 +21,6 @@ function darkMode(){
         theme.href = 'css/tumma.css';
         localStorage.setItem('theme', 'tumma');
 
-
     } else {
         theme.href = 'css/style.css';
         localStorage.setItem('theme', 'vaalea');
