@@ -1,3 +1,5 @@
+"use strict";
+
 // Google maps initialisaatio.
 async function initMap() {
   try{

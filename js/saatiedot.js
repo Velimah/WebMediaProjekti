@@ -1,3 +1,5 @@
+"use strict";
+
 let sijainti;
 
 navigator.geolocation.getCurrentPosition(
