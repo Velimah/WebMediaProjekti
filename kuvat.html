@@ -8,11 +8,12 @@
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <link rel="stylesheet" type="text/css" href="css/vetovalikko.css" />
   <link rel="stylesheet" type="text/css" href="css/kuvat.css" />
+  <link href="lightbox2-2.11.3/dist/css/lightbox.css" rel="stylesheet" />
   
 </head>
 
 <body>
-
+<script src="/js/jquery.js"></script>
 <header id="ylapalkki">
 
   <h1 id="otsikko">Kuvat</h1>
@@ -47,7 +48,7 @@
   <div id="kuvat">
     <div class="setti">
       <div class="kuva">
-        <img id="kyltti" src="img/bike_sign.jpg" alt="kuva" width="700">
+        <a class="lightbox-link" href="img/bike_sign.jpg" data-lightbox="image-1" data-title="kyltti"><img class="image" src="img/bike_sign.jpg" alt="kuva kyltistä" width="400"/></a>
       </div>
       <div class="teksti">
         <h2>Otsikko</h2>
@@ -57,7 +58,7 @@
     </div>
     <div class="setti">
       <div class="kuva">
-        <img id="polkupyorat" src="img/bikes.jpg" alt="kuva" width="700">
+        <a class="lightbox-link" href="img/bikes.jpg" data-lightbox="image-1" data-title="polkypyörat"><img class="image" src="img/bikes.jpg" alt="kuva polkupyöristä" width="400"/></a>
       </div>
       <div class="teksti">
         <h2>Otsikko</h2>
@@ -65,7 +66,7 @@
       </div></div>
     <div class="setti">
       <div class="kuva">
-        <img id="renkaat" src="img/wheels.jpg" alt="kuva" width="700">
+        <a class="lightbox-link" href="img/wheels.jpg" data-lightbox="image-1" data-title="renkaat"><img class="image" src="img/wheels.jpg" alt="kuva renkaista" width="400"/></a>
       </div>
       <div class="teksti">
         <h2>Otsikko</h2>
@@ -83,5 +84,6 @@
   <a href="https://fi-fi.facebook.com/helsinginseudunliikenne/"><img src="img/facebook.png" alt="HSL Facebook sivu"></a>
   <a href="https://www.instagram.com/explore/tags/kaupunkipy%C3%B6r%C3%A4/?hl=fi"><img src="img/instagram.png" alt="Instagram kaupunkipyöräkuvat"></a>
 </footer>
+<script src="lightbox2-2.11.3/dist/js/lightbox.js"></script>
 </body>
 </html>

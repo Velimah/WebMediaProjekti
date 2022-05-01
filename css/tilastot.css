@@ -1,3 +1,10 @@
+#teksti {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
 
 .container {
     max-width: 1000px;
@@ -6,12 +13,5 @@
 .container div {
     margin: 30px auto;
     max-width: 100%;
-}
-#tilastotInfo {
-    margin: 30px auto;
-}
-#tilastotInfo h3{
-    text-align: center;
-    margin: 30px auto;
 }
 
