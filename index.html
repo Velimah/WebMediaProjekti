@@ -5,14 +5,15 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Kaupunkipyörät</title>
-	<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css" id="theme-link"/>
 	<link rel="stylesheet" type="text/css" href="css/vetovalikko.css" />
 	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 	<script defer src="js/kartta.js"></script>
 	<script defer src="js/saatiedot.js"></script>
 	<script src="js/teema.js"></script>
 </head>
+
 <body>
 
 <header id="ylapalkki">
@@ -43,9 +44,11 @@
 </header>
 
 <main>
+
 	<figure>
 		<img id="paakuva" src="img/kuva.jpg" alt="kuva">
 	</figure>
+
 	<article class="maintext">
 		<h2>Otsikko</h2>
 		<p>Kaupunkipyörät eli lyhyeksi ajaksi lainattavat yhteiskäyttöpyörät on nostettu entistä vahvemmin esille kaupunkien liikennestrategioissa ja liikennejärjestelmäsuunnitelmissa. Kiinnostusta on lisännyt myös Helsingin paljon myönteistä palautetta saanut kaupunkipyöräjärjestelmä.</p>
@@ -57,7 +60,9 @@
 		<p>Tampereella monet seikat, kuten riittävän suuri toiminta-alue, sekoittunut kaupunkirakenne, korkeatasoinen ja kehittyvä joukkoliikenne sekä monipuolinen käyttäjäryhmä, tukevat kokonaisvaltaisen kaupunkipyöräjärjestelmän onnistumista. Myös muissa kohdekaupungeissa löytyy paljon järjestelmää tukevia piirteitä, mutta riski pyörien jäämisestä vajaakäytölle on Tamperetta suurempi. Huolellisella suunnittelulla ja toteutuksella myös Oulussa ja Jyväskylässä on edellytykset onnistuneen kokonaisvaltaisen kaupunkipyöräjärjestelmän toteuttamiseen. </p>
 		<p>Selvitykseen osallistuneista kaupungeista Lahdella on vähiten kaupunkipyöräjärjestelmää tukevia piirteitä. Kaupunkiin voisikin alkuvaiheessa soveltua paremmin esimerkiksi tiettyjä liikennekäytäviä palveleva yhteisöllinen kaupunkipyöräjärjestelmä. Tämä tosin edellyttää, että yhteisöllisten kaupunkipyörien paikannusjärjestelmät mahdollistavat pyörän palauttamisen useaan paikkaan. </p>
 	</article>
+
 	<article id="reittihaku">
+
 		<h2>Reittihaku</h2>
 
 		<!--reititysominaisuudelle joko input fieldit tai sit se et vaa karttaa klikkaamal voi valita määränpään? -->
@@ -69,7 +74,9 @@
 		<p id="bikeinfo"></p>
 
 	</article>
+
 	<section id="saa"></section>
+
 	<section id="map"></section>
 
 	<div class="teemaBtn-container">
@@ -77,15 +84,14 @@
 			<button onclick="darkMode()" id="teemaBtn">Tumma/Vaalea teema</button>
 		</div>
 	</div>
-		
-	
-
 
 </main>
+
 <footer>
 	<a href="https://fi-fi.facebook.com/helsinginseudunliikenne/"><img src="img/facebook.png" alt="HSL Facebook sivu"></a>
 	<a href="https://www.instagram.com/explore/tags/kaupunkipy%C3%B6r%C3%A4/?hl=fi"><img src="img/instagram.png" alt="Instagram kaupunkipyöräkuvat"></a>
 </footer>
+
 <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8cax_WFZlRgcyXs8iHmJUVWG5ue9wmnQ&callback=initMap&v=weekly"></script>
 </body>
 </html>
