@@ -21,7 +21,7 @@ async function Saatiedot() {
     const aika = new Date().toLocaleTimeString('fi', {day:"numeric", month: 'numeric', hour12 : false, hour: '2-digit', minute:'2-digit'});
 
     document.getElementById('saa').innerHTML =
-      '<h2 id="saaNimi">'+saaTiedot.name+'&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp'+aika+'</h2>'+
+      '<h2 id="saaNimi">'+saaTiedot.name+'&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp'+aika+'</h2>'+
 
       '<div id="container">'+
 
