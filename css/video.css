@@ -1,7 +1,22 @@
 #videoteksti {
     max-width: 1000px;
-    margin: 30px auto;
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
     line-height: 30px;
+}
+#videoteksti h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#videoteksti p {
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 #video {
     max-width: 1000px;
