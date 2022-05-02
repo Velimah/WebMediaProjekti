@@ -75,7 +75,6 @@ li {
 #menu a{
     display:block;
     padding:3px;
-    background-color: rgb(30, 30, 30);
     color: rgb(200, 200, 200);
     text-decoration: none;
 }
@@ -181,13 +180,13 @@ footer img {
     color: black;
 }
 
-@media (max-width:800px) {
+@media (max-width:950px) {
 #menu   {
     display: none;
 }
 
 }
-@media (min-width:800px) {
+@media (min-width:950px) {
     .vetovalikko {
         display: none;
     }
