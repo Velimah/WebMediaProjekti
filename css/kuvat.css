@@ -36,15 +36,12 @@ img {
     }
     .teksti {
         padding-top: 30px;
+        padding-left: 0;
+        padding-right: 0;
     }
-    .kuva {
-        padding-right: 30px;
-        padding-left: 30px;
-    }
-
 }
 @media (max-width: 450px) {
     img {
-        width: 300px;
+        max-width: 300px;
     }
 }
