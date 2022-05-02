@@ -30,7 +30,7 @@ async function initMap() {
         });
 
         const popupIkkuna = new google.maps.InfoWindow({
-          content: '<h3>Olet tässä</h3>'
+          content: '<h3 class="infoteksti">Olet tässä</h3>'
         });
 
         google.maps.event.addListener(merkki,'mouseover',function() {
@@ -70,10 +70,10 @@ async function initMap() {
       });
 
       const asemanTiedot =
-        '<div class="infoteksti">' +
-        '<h2>'+asemat.features[i].properties.Nimi+'</h2>' +
-        '<h3>Osoite: '+asemat.features[i].properties.Osoite+'</h3>' +
-        '<h3>Kapasiteetti: '+asemat.features[i].properties.Kapasiteet+'</h3>' +
+        '<div>' +
+        '<h2 class="infoteksti">'+asemat.features[i].properties.Nimi+'</h2>' +
+        '<h3 class="infoteksti">Osoite: '+asemat.features[i].properties.Osoite+'</h3>' +
+        '<h3 class="infoteksti">Kapasiteetti: '+asemat.features[i].properties.Kapasiteet+'</h3>' +
         '</div>';
 
       const infoIkkuna = new google.maps.InfoWindow({

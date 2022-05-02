@@ -37,6 +37,6 @@ figure {
     margin-right: auto;
     margin-left: auto;
 }
-.infoteksti > *{
+.infoteksti {
     color: black;
 }
