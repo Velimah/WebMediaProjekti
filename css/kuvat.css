@@ -43,3 +43,8 @@ img {
     }
 
 }
+@media (max-width: 450px) {
+    img {
+        width: 300px;
+    }
+}
