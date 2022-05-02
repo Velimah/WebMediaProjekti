@@ -54,10 +54,20 @@ const data = [{
   type:"bar"
 }];
 
-const layout = {title:"Poljetut kilometrit", plot_bgcolor:"rgba(255, 255, 255, 0)",
-  paper_bgcolor:"#rgba(255, 255, 255, 0)"};
+if (theme.getAttribute('href') === 'css/style.css') {
 
-Plotly.newPlot("graafi1", data, layout);
+  const layout = {
+    title: "Poljetut kilometrit", plot_bgcolor: "rgba(255, 255, 255, 0)",
+    paper_bgcolor: "#rgba(255, 255, 255, 0)"};
+  Plotly.newPlot("graafi1", data, layout);
+}
+else {
+    const layout = {
+      title:"Poljetut kilometrit", plot_bgcolor:"rgba(255, 255, 255, 0)",
+      paper_bgcolor:"#rgba(255, 255, 255, 0)", font: {color: "#FFFFFF"}};
+  Plotly.newPlot("graafi1", data, layout);
+}
+
 
 
 const xArray2 = ["Huhtikuu", "Toukokuu", "Kesäkuu", "Heinäkuu", "Elokuu", "Syyskuu", "Lokakuu"];
@@ -69,10 +79,21 @@ const data2 = [{
   type:"bar"
 }];
 
-const layout2 = {title:"Poljetut tunnit", plot_bgcolor:"rgba(255, 255, 255, 0)",
-  paper_bgcolor:"#rgba(255, 255, 255, 0)"};
+if (theme.getAttribute('href') === 'css/style.css') {
+  const layout2 = {
+    title: "Poljetut tunnit", plot_bgcolor: "rgba(255, 255, 255, 0)",
+    paper_bgcolor: "#rgba(255, 255, 255, 0)"
+  };
 
-Plotly.newPlot("graafi2", data2, layout2);
+  Plotly.newPlot("graafi2", data2, layout2);
+} else {
+  const layout2 = {
+    title: "Poljetut tunnit", plot_bgcolor: "rgba(255, 255, 255, 0)",
+    paper_bgcolor: "#rgba(255, 255, 255, 0)", font: {color: "#FFFFFF"}
+  };
+
+  Plotly.newPlot("graafi2", data2, layout2);
+}
 
 
 const xArray3 = ["Huhtikuu", "Toukokuu", "Kesäkuu", "Heinäkuu", "Elokuu", "Syyskuu", "Lokakuu"];
@@ -84,10 +105,22 @@ const data3 = [{
   type:"bar"
 }];
 
-const layout3 = {title:"Poljetut matkat", plot_bgcolor:"rgba(255, 255, 255, 0)",
-  paper_bgcolor:"#rgba(255, 255, 255, 0)"};
+if (theme.getAttribute('href') === 'css/style.css') {
 
-Plotly.newPlot("graafi3", data3, layout3);
+  const layout3 = {
+    title: "Poljetut matkat", plot_bgcolor: "rgba(255, 255, 255, 0)",
+    paper_bgcolor: "#rgba(255, 255, 255, 0)"
+  };
+
+  Plotly.newPlot("graafi3", data3, layout3);
+} else {
+  const layout3 = {
+    title: "Poljetut matkat", plot_bgcolor: "rgba(255, 255, 255, 0)",
+    paper_bgcolor: "#rgba(255, 255, 255, 0)", font: {color: "#FFFFFF"}
+  };
+
+  Plotly.newPlot("graafi3", data3, layout3);
+}
 
 
 const xArray4 = ["Huhtikuu", "Toukokuu", "Kesäkuu", "Heinäkuu", "Elokuu", "Syyskuu", "Lokakuu"];
@@ -99,11 +132,23 @@ const data4 = [{
   type:"bar"
 }];
 
-const layout4 = {title:"Keskimääräinen matkan pituus (m)", plot_bgcolor:"rgba(255, 255, 255, 0)",
-  paper_bgcolor:"#rgba(255, 255, 255, 0)"};
+if (theme.getAttribute('href') === 'css/style.css') {
+  const layout4 = {
+    title: "Keskimääräinen matkan pituus (m)",
+    plot_bgcolor: "rgba(255, 255, 255, 0)",
+    paper_bgcolor: "#rgba(255, 255, 255, 0)"
+  };
 
-Plotly.newPlot("graafi4", data4, layout4);
+  Plotly.newPlot("graafi4", data4, layout4);
+} else {
+  const layout4 = {
+    title: "Keskimääräinen matkan pituus (m)",
+    plot_bgcolor: "rgba(255, 255, 255, 0)",
+    paper_bgcolor: "#rgba(255, 255, 255, 0)", font: {color: "#FFFFFF"}
+  };
 
+  Plotly.newPlot("graafi4", data4, layout4);
+}
 
 const xArray5 = ["Huhtikuu", "Toukokuu", "Kesäkuu", "Heinäkuu", "Elokuu", "Syyskuu", "Lokakuu"];
 const yArray5 = [18, 16, 18, 17, 15, 15, 0];
@@ -114,9 +159,21 @@ const data5 = [{
   type:"bar"
 }];
 
-const layout5 = {title:"Keskimääräinen matkan kesto (min)", plot_bgcolor:"rgba(255, 255, 255, 0)",
-  paper_bgcolor:"#rgba(255, 255, 255, 0)"};
+if (theme.getAttribute('href') === 'css/style.css') {
+  const layout5 = {
+    title: "Keskimääräinen matkan kesto (min)",
+    plot_bgcolor: "rgba(255, 255, 255, 0)",
+    paper_bgcolor: "#rgba(255, 255, 255, 0)"
+  };
 
-Plotly.newPlot("graafi5", data5, layout5);
+  Plotly.newPlot("graafi5", data5, layout5);
+} else {
+  const layout5 = {
+    title: "Keskimääräinen matkan kesto (min)",
+    plot_bgcolor: "rgba(255, 255, 255, 0)",
+    paper_bgcolor: "#rgba(255, 255, 255, 0)", font: {color: "#FFFFFF"}
+  };
 
+  Plotly.newPlot("graafi5", data5, layout5);
+}
 
