@@ -63,7 +63,6 @@ ul {
 }
 
 li {
-    top: -40px;
     display:block;
     position: relative;
     width:120px;
@@ -180,13 +179,13 @@ footer img {
     color: black;
 }
 
-@media (max-width:950px) {
+@media (max-width:800px) {
 #menu   {
     display: none;
 }
 
 }
-@media (min-width:950px) {
+@media (min-width:800px) {
     .vetovalikko {
         display: none;
     }

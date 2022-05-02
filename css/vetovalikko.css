@@ -4,6 +4,21 @@
     padding: 12px;
     font-size: 16px;
     border: none;
+
+}
+#teemanappi {
+    position: absolute;
+    background-color: #0C5E6E;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    left: 20px;
+    top: 90px;
+}
+.teemacontainer:hover #teemanappi {
+    background-color: #0C5E6E;
+    box-shadow: 0 0 5px #0C5E6E;
 }
 
 .vetovalikko {
