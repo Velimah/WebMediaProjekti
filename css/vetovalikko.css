@@ -1,5 +1,5 @@
 .vetonappi {
-    background-color: rgba(0, 0, 255, 0.5);
+    background-color: #0C5E6E;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -30,7 +30,8 @@
 }
 
 .sisalto a:hover {
-    background-color: #ddd;
+    background-color: #15A4C1;
+    box-shadow: 0 0 5px #15A4C1;
 }
 
 .vetovalikko:hover .sisalto {
@@ -38,5 +39,6 @@
 }
 
 .vetovalikko:hover .vetonappi {
-    background-color: #0000ff;
+    background-color: #0C5E6E;
+    box-shadow: 0 0 5px #0C5E6E;
 }

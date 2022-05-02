@@ -53,7 +53,7 @@ ul {
 #menu {
     margin: 10px;
     width: 100%;
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     text-decoration: none;
 }
@@ -70,7 +70,7 @@ li {
     display:block;
     padding:3px;
     background-color:#fff;
-    color: rgba(0, 0, 255, 0.7);
+    color: #0C5E6E;
     text-decoration: none;
 }
 #ylapalkki {
@@ -87,7 +87,8 @@ li {
 
 #menu a:hover {
     background-color: rgba(255, 255, 255, 0.7);
-    color: #0000ff;
+    color: #0C5E6E;
+    text-shadow: 0 0 1px #0C5E6E;
     text-decoration: underline;
 }
 
@@ -148,7 +149,7 @@ footer {
     width: 100%;
     z-index: 999;
     background-color: #ffffff;
-    box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #c9c8c8;
 }
 
 footer img {
