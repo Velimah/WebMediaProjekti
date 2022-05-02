@@ -11,8 +11,6 @@ figure {
 
 .maintext {
     max-width: 1000px;
-    padding-left: 30px;
-    padding-right: 30px;
     margin: 30px auto;
     line-height: 30px;
 }
@@ -38,4 +36,7 @@ figure {
     margin-bottom: 30px;
     margin-right: auto;
     margin-left: auto;
+}
+.infoteksti > *{
+    color: black;
 }

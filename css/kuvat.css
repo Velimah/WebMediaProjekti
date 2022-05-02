@@ -34,5 +34,9 @@
     .teksti {
         padding-top: 30px;
     }
+    .kuva {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
 
 }

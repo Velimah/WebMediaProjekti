@@ -70,7 +70,7 @@ async function initMap() {
       });
 
       const asemanTiedot =
-        '<div>' +
+        '<div class="infoteksti">' +
         '<h2>'+asemat.features[i].properties.Nimi+'</h2>' +
         '<h3>Osoite: '+asemat.features[i].properties.Osoite+'</h3>' +
         '<h3>Kapasiteetti: '+asemat.features[i].properties.Kapasiteet+'</h3>' +
