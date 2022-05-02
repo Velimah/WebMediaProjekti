@@ -82,7 +82,7 @@ li {
     width: 100%;
     z-index: 999;
     background-color: #ffffff;
-    box-shadow: 0 0 20px #ccc;
+    box-shadow: 0 0 10px #ccc;
 }
 
 #menu a:hover {
@@ -148,7 +148,7 @@ footer {
     width: 100%;
     z-index: 999;
     background-color: #ffffff;
-    box-shadow: 0 0 20px #ccc;
+    box-shadow: 0 0 10px #ccc;
 }
 
 footer img {
