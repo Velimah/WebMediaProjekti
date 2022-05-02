@@ -54,7 +54,8 @@ const data = [{
   type:"bar"
 }];
 
-const layout = {title:"Poljetut kilometrit"};
+const layout = {title:"Poljetut kilometrit", plot_bgcolor:"rgba(255, 255, 255, 0)",
+  paper_bgcolor:"#rgba(255, 255, 255, 0)"};
 
 Plotly.newPlot("graafi1", data, layout);
 
@@ -68,7 +69,8 @@ const data2 = [{
   type:"bar"
 }];
 
-const layout2 = {title:"Poljetut tunnit"};
+const layout2 = {title:"Poljetut tunnit", plot_bgcolor:"rgba(255, 255, 255, 0)",
+  paper_bgcolor:"#rgba(255, 255, 255, 0)"};
 
 Plotly.newPlot("graafi2", data2, layout2);
 
@@ -82,7 +84,8 @@ const data3 = [{
   type:"bar"
 }];
 
-const layout3 = {title:"Poljetut matkat"};
+const layout3 = {title:"Poljetut matkat", plot_bgcolor:"rgba(255, 255, 255, 0)",
+  paper_bgcolor:"#rgba(255, 255, 255, 0)"};
 
 Plotly.newPlot("graafi3", data3, layout3);
 
@@ -96,7 +99,8 @@ const data4 = [{
   type:"bar"
 }];
 
-const layout4 = {title:"Keskimääräinen matkan pituus (m)"};
+const layout4 = {title:"Keskimääräinen matkan pituus (m)", plot_bgcolor:"rgba(255, 255, 255, 0)",
+  paper_bgcolor:"#rgba(255, 255, 255, 0)"};
 
 Plotly.newPlot("graafi4", data4, layout4);
 
@@ -110,7 +114,8 @@ const data5 = [{
   type:"bar"
 }];
 
-const layout5 = {title:"Keskimääräinen matkan kesto (min)"};
+const layout5 = {title:"Keskimääräinen matkan kesto (min)", plot_bgcolor:"rgba(255, 255, 255, 0)",
+  paper_bgcolor:"#rgba(255, 255, 255, 0)"};
 
 Plotly.newPlot("graafi5", data5, layout5);
 
