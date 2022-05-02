@@ -13,6 +13,7 @@ figure {
     max-width: 1000px;
     margin: 30px auto;
     line-height: 30px;
+    text-align: justify;
 }
 .maintext h2 {
     margin-top: 30px;
