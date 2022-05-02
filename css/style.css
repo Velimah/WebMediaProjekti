@@ -94,17 +94,10 @@ li {
 
 #reittihaku {
     max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-    margin-top: 30px;
 }
 #saa {
     max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-    margin-top: 30px;
+
 }
 #saaNimi {
     text-decoration: underline;
@@ -121,6 +114,14 @@ li {
     margin-left: auto;
     margin-right: auto;
     justify-content: left;
+}
+#container2 {
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
 }
 #ikoni {
     text-align: center;
@@ -168,7 +169,9 @@ footer img {
 #menu   {
     display: none;
 }
-
+#container2 {
+    flex-direction: column;
+}
 }
 @media (min-width:950px) {
     .vetovalikko {

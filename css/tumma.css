@@ -11,7 +11,6 @@ html{
     font-family: GalanoClassic,sans-serif;
 }
 body {
-    min-height: 100vh;
     margin: 0;
     padding: 0;
     background-color: #404040;
@@ -21,6 +20,7 @@ body {
 main {
     margin-top: 150px;
     padding: 30px 30px 0;
+    min-height: 69vh;
 }
 
 
@@ -32,7 +32,7 @@ main {
 #map {
     display: flex;
     flex-wrap: wrap;
-    height: 600px;
+    height: 500px;
     max-width: 1000px;
     margin-bottom: 20px;
     margin-right: auto;
@@ -98,18 +98,10 @@ li {
 
 #reittihaku {
     max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-    margin-top: 30px;
 }
-
 #saa {
     max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-    margin-top: 30px;
+
 }
 
 #saaNimi {
@@ -128,7 +120,14 @@ li {
     margin-right: auto;
     justify-content: left;
 }
-
+#container2 {
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
 .tekstilinkki {
     color: white;
 }
