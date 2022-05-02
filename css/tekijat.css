@@ -81,22 +81,25 @@
     margin-top: 0;
     margin-bottom: 30px;
 }
-@media (max-width:560px) {
+
+@media (max-width:800px) {
+    .box2{
+        width: 250px;
+    }
+}
+@media (max-width:605px) {
     .box1 {
         height: 250px;
+        width: 250px;
     }
     .henkilokuva{
         height: 250px;
         width: 250px;
     }
+}
+@media (max-width: 565px) {
     .box2{
-        width: 250px;
         text-align: center;
         padding: 0;
-    }
-}
-@media (max-width:800px) {
-    .box2{
-        width: 250px;
     }
 }
