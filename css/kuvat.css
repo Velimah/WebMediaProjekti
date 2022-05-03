@@ -28,7 +28,6 @@ img {
     padding-right: 30px;
     max-width: 540px;
     line-height: 30px;
-    margin: auto;
     text-align: justify;
 }
 @media (max-width:1080px) {

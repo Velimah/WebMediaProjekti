@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="index.css" />
+  <link href="lightbox2-2.11.3/dist/css/lightbox.css" rel="stylesheet" />
+  <title>Kaupunkipyörät</title>
+</head>
+<body>
+<script src="jquery.js"></script>
+
+<main>
+
+<h1 id="otsikko">Kaupunkipyörät</h1>
+<h2 id="alaotsikko">Web-tekniikat ja digitaalinen media – Projekti</h2>
+
+<section>
+<h2>Tekijät</h2>
+<p> Lilian Aasa</p>
+<p>Sami Bäckman</p>
+<p>Veli-Matti Heino</p>
+</section>
+
+<section>
+<h2>Sovelluksen yleiskuvaus</h2>
+<p>Internet-sivustolta näkee Espoon, Helsingin ja Vantaan kaupunkipyöräasemien sijainnit kartalla. Sivusto näyttää myös nykyisen sijainnin ja sään kyseisessä sijainnissa.</p>
+<p>Sivusto on tarkoitettu lähimmän aseman nopeaan löytämiseen ilman tarvetta osoitteen syöttämiselle.</p>
+<p>Sivusto koostuu 5 erillisestä lehdestä </p>
+<ul>
+  <li>Kartta, Tilastot, Kuvat, Video, Tekijät</li>
+</ul>
+</section>
+
+<section>
+<h2>Sovelluksen ominaisuudet ja toiminnot</h2>
+<p>Google-maps kartta</p>
+<ul>
+  <li>Kaupunkipyöräasemien tiedot hiirellä osoittaessa (Nimi, Osoite, Aseman kapasiteetti)</li>
+  <li>Käyttäjän sijainti</li>
+</ul>
+<p>Reaaliaikainen sää käyttäjän sijainnissa</p>
+<ul>
+  <li>Kaupunki, Päiväys, Kello</li>
+  <li>Sää-ikoni</li>
+  <li>Lämpötila, Kosteus, Tuuli, Paine</li>
+</ul>
+<p>Rajapinnasta laskettuja tilastoja vuodelta 2021</p>
+<ul>
+  <li>Matkat, Kilometrit, Tunnit</li>
+  <li>Keskimääräinen matkan pituus</li>
+  <li>Keskimääräinen matkan kesto</li>
+</ul>
+<p>Darkmode</p>
+<ul>
+  <li>Tumma värivaihtoehto sivustolle</li>
+</ul>
+<p>Header ja Footer jokaisella lehdellä</p>
+<ul>
+  <li>Headerissa lehden otsikko ja valikko siirtymiseen eri lehdille</li>
+  <li>Footerissa linkkejä sosiaaliseen mediaan</li>
+</ul>
+<p>Responsiivinen ulkoasu</p>
+<ul>
+  <li>Valikko menee kapeassa näytössä napin alle</li>
+  <li>Kuvasivusto vaihtaa ulkomuotoa kapeassa näytössä</li>
+  <li>Henkilökortit vaihtaa ulkomuotoa kapeassa näytössä</li>
+</ul>
+</section>
+
+<section>
+<h2>Käytetyt API:t</h2>
+<p>Kaupunkipyörillä ajetut matkat</p>
+<a href="https://www.opendata.fi/data/fi/dataset/helsingin-ja-espoon-kaupunkipyorilla-ajatut-matkat">https://www.opendata.fi/data/fi/dataset/helsingin-ja-espoon-kaupunkipyorilla-ajatut-matkat</a>
+<p>Vantaan kaupunkipyöräasemat</p>
+<a href="https://www.opendata.fi/data/fi/dataset/vantaan-kaupunkipyoraasemat">https://www.opendata.fi/data/fi/dataset/vantaan-kaupunkipyoraasemat</a>
+<p>Helsingin ja Espoon kaupunkipyöräasemat</p>
+<a href="https://www.opendata.fi/data/fi/dataset/hsl-n-kaupunkipyoraasemat">https://www.opendata.fi/data/fi/dataset/hsl-n-kaupunkipyoraasemat</a>
+<p>Openweather Sää</p>
+<a href="https://openweathermap.org/current">https://openweathermap.org/current</a>
+</section>
+
+<section>
+<h2>Koodiesimerkkejä, klikkaa suuremmaksi</h2>
+<div id="flexbox">
+  <a class="lightbox-link" href="2.jpg" data-lightbox="image-1" data-title="sijainti"><img class="image" src="2.jpg" alt="sijainti" /></a>
+  <p>Sijainti</p>
+  <a class="lightbox-link" href="1.jpg" data-lightbox="image-1" data-title="säätiedot"><img class="image" src="1.jpg" alt="säätiedot" /></a>
+  <p>Säätiedot</p>
+  <a class="lightbox-link" href="3.jpg" data-lightbox="image-1" data-title="asematiedot kartalle"><img class="image" src="3.jpg" alt="asematiedot kartalle" /></a>
+  <p>Asematiedot kartalle</p>
+  <a class="lightbox-link" href="4.jpg" data-lightbox="image-1" data-title="darkmode"><img class="image" src="4.jpg" alt="darkmode" /></a>
+  <p>Darkmode</p>
+</div>
+</section>
+
+<section>
+<h2>Linkki internet-sivuille</h2>
+  <p>Etusivu</p>
+  <a href="https://users.metropolia.fi/~velimah/WebMediaProjekti/kartta.html">https://users.metropolia.fi/~velimah/WebMediaProjekti/kartta.html</a>
+  <p>Juurihakemisto</p>
+  <a href="https://users.metropolia.fi/~velimah/WebMediaProjekti/">https://users.metropolia.fi/~velimah/WebMediaProjekti/</a>
+
+</section>
+</main>
+<script src="lightbox2-2.11.3/dist/js/lightbox.js"></script>
+</body>
+</html>
