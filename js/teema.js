@@ -1,3 +1,5 @@
+'use strict';
+
 const themeMemory = localStorage.getItem('theme');
 // noutaa avaimen/itemin 'theme'
 
