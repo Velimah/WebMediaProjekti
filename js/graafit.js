@@ -61,19 +61,21 @@ const data = [{
   type:"bar"
 }];
 
-//valitaan oikea graafin tekstiväri font: {color: "#XXXXXX"} nykyisen teeman mukaan.
+//valitaan oikea graafin ulkoasu nykyisen teeman mukaan ja luodaan graafi.
 if (theme.getAttribute('href') === 'css/style.css') {
 
   const layout = {
     title: "Poljetut kilometrit", plot_bgcolor: "rgba(255, 255, 255, 0)",
     paper_bgcolor: "#rgba(255, 255, 255, 0)"};
   Plotly.newPlot("graafi1", data, layout);
-}
-else {
+
+} else {
+
     const layout = {
       title:"Poljetut kilometrit", plot_bgcolor:"rgba(255, 255, 255, 0)",
-      paper_bgcolor:"#rgba(255, 255, 255, 0)", font: {color: "#FFFFFF"}};
-  Plotly.newPlot("graafi1", data, layout);
+      paper_bgcolor:"#rgba(255, 255, 255, 0)", font: {color: "#FFFFFF"}
+    };
+    Plotly.newPlot("graafi1", data, layout);
 }
 
 //luodaan listat kuukausista ja arvoista.
@@ -87,7 +89,7 @@ const data2 = [{
   type:"bar"
 }];
 
-//valitaan oikea graafin tekstiväri font: {color: "#XXXXXX"} nykyisen teeman mukaan.
+//valitaan oikea graafin ulkoasu nykyisen teeman mukaan ja luodaan graafi.
 if (theme.getAttribute('href') === 'css/style.css') {
   const layout2 = {
     title: "Poljetut tunnit", plot_bgcolor: "rgba(255, 255, 255, 0)",
@@ -100,8 +102,8 @@ if (theme.getAttribute('href') === 'css/style.css') {
     title: "Poljetut tunnit", plot_bgcolor: "rgba(255, 255, 255, 0)",
     paper_bgcolor: "#rgba(255, 255, 255, 0)", font: {color: "#FFFFFF"}
   };
-
   Plotly.newPlot("graafi2", data2, layout2);
+
 }
 
 //luodaan listat kuukausista ja arvoista.
@@ -115,22 +117,23 @@ const data3 = [{
   type:"bar"
 }];
 
-//valitaan oikea graafin tekstiväri font: {color: "#XXXXXX"} nykyisen teeman mukaan.
+//valitaan oikea graafin ulkoasu nykyisen teeman mukaan ja luodaan graafi.
 if (theme.getAttribute('href') === 'css/style.css') {
 
   const layout3 = {
     title: "Poljetut matkat", plot_bgcolor: "rgba(255, 255, 255, 0)",
     paper_bgcolor: "#rgba(255, 255, 255, 0)"
   };
-
   Plotly.newPlot("graafi3", data3, layout3);
+
 } else {
+
   const layout3 = {
     title: "Poljetut matkat", plot_bgcolor: "rgba(255, 255, 255, 0)",
     paper_bgcolor: "#rgba(255, 255, 255, 0)", font: {color: "#FFFFFF"}
   };
-
   Plotly.newPlot("graafi3", data3, layout3);
+
 }
 
 //luodaan listat kuukausista ja arvoista.
@@ -144,23 +147,25 @@ const data4 = [{
   type:"bar"
 }];
 
-//valitaan oikea graafin tekstiväri font: {color: "#XXXXXX"} nykyisen teeman mukaan.
+//valitaan oikea graafin ulkoasu nykyisen teeman mukaan ja luodaan graafi.
 if (theme.getAttribute('href') === 'css/style.css') {
+
   const layout4 = {
     title: "Keskimääräinen matkan pituus (m)",
     plot_bgcolor: "rgba(255, 255, 255, 0)",
     paper_bgcolor: "#rgba(255, 255, 255, 0)"
   };
-
   Plotly.newPlot("graafi4", data4, layout4);
+
 } else {
+
   const layout4 = {
     title: "Keskimääräinen matkan pituus (m)",
     plot_bgcolor: "rgba(255, 255, 255, 0)",
     paper_bgcolor: "#rgba(255, 255, 255, 0)", font: {color: "#FFFFFF"}
   };
-
   Plotly.newPlot("graafi4", data4, layout4);
+
 }
 
 //luodaan listat kuukausista ja arvoista.
@@ -174,22 +179,24 @@ const data5 = [{
   type:"bar"
 }];
 
-//valitaan oikea graafin tekstiväri font: {color: "#XXXXXX"} nykyisen teeman mukaan.
+//valitaan oikea graafin ulkoasu nykyisen teeman mukaan ja luodaan graafi.
 if (theme.getAttribute('href') === 'css/style.css') {
+
   const layout5 = {
     title: "Keskimääräinen matkan kesto (min)",
     plot_bgcolor: "rgba(255, 255, 255, 0)",
     paper_bgcolor: "#rgba(255, 255, 255, 0)"
   };
-
   Plotly.newPlot("graafi5", data5, layout5);
+
 } else {
+
   const layout5 = {
     title: "Keskimääräinen matkan kesto (min)",
     plot_bgcolor: "rgba(255, 255, 255, 0)",
     paper_bgcolor: "#rgba(255, 255, 255, 0)", font: {color: "#FFFFFF"}
   };
-
   Plotly.newPlot("graafi5", data5, layout5);
+
 }
 

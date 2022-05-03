@@ -1,9 +1,5 @@
-/*function darkMode(){
-    let element = document.body;
-    
-    element.classList.toggle("dark-mode");
-   
-}*/
+"use strict";
+
 const themeMemory = localStorage.getItem('theme');
 
 const theme = document.querySelector('#theme-link');
