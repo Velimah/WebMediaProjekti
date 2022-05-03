@@ -2,7 +2,7 @@
 
 let sijainti;
 
-// Hakee nykyisen sijainnin.
+//hakee nykyisen sijainnin.
 navigator.geolocation.getCurrentPosition(
   (position) => {
     sijainti = {
@@ -13,11 +13,9 @@ navigator.geolocation.getCurrentPosition(
     Saatiedot()
   });
 
-// Hakee reaaliaikaiset säätiedot.
-// API lähde: https://openweathermap.org/current
+// Hakee reaaliaikaiset säätiedot openweather API:sta. Sijoittaa osoitteeseen ylempänä haetut koordinaatit, että saadaan paikalliset säätiedot.
 async function Saatiedot() {
   try{
-    // Sijoittaa osoitteeseen ylempänä haetut koordinaatit, että saadaan paikalliset säätiedot.
     const vastaus = await fetch('https://api.openweathermap.org/data/2.5/weather?lat='+sijainti.lat+'&lon='+sijainti.lng+
       '&appid=14059927d263d5687eba5d18f990a49d&units=metric&lang=fi');
     if (!vastaus.ok) {
@@ -25,14 +23,14 @@ async function Saatiedot() {
     }
     const saaTiedot = await vastaus.json();
 
-    // Tulostaa säätiedot lokiin.
+    //Tulostaa säätiedot lokiin.
     console.log('saaTiedot', saaTiedot);
 
-    // Luo aikamuuttujan.
+    //Luo aikamuuttujan.
     const aika = new Date().toLocaleTimeString('fi', {day:"numeric", month: 'numeric', hour12 : false, hour: '2-digit', minute:'2-digit',
       weekday: 'short'});
 
-    // Luo html elementin, johon sijoitetaan aikamuuttuja, säätiedot, sijainti ja kuva.
+    // luo html elementin, johon sijoitetaan aikamuuttuja, säätiedot, sijainti ja kuva.
     document.getElementById('saa').innerHTML =
       '<h2 id="saaNimi">'+saaTiedot.name+'&nbsp&nbsp&nbsp&nbsp'+aika+'</h2>'+
       '<div id="container">'+
