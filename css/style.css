@@ -153,50 +153,6 @@ li {
 #reittihaku {
     max-width: 1000px;
 }
-#saa {
-    max-width: 1000px;
-
-}
-#saaNimi {
-    text-decoration: underline;
-    position: relative;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0;
-}
-#container {
-    display: flex;
-    flex-direction: row;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: left;
-}
-#container2 {
-    display: flex;
-    flex-direction: row;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: space-between;
-}
-#ikoni {
-    text-align: center;
-    margin-top: -15px;
-  }
-#ikoni p {
-    margin-top: -20px;
-}
-#saaTiedot p{
-    margin-top: 3px;
-    margin-bottom: 3px;
-    margin-left: 20px;
-}
-#teemaBtn {
-    width: 160px;
-
-}
 
 footer {
     bottom: 0;

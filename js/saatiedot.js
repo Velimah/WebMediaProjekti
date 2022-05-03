@@ -21,10 +21,11 @@ async function Saatiedot() {
     const saaTiedot = await vastaus.json();
     console.log('saaTiedot', saaTiedot);
 
-    const aika = new Date().toLocaleTimeString('fi', {day:"numeric", month: 'numeric', hour12 : false, hour: '2-digit', minute:'2-digit'});
+    const aika = new Date().toLocaleTimeString('fi', {day:"numeric", month: 'numeric', hour12 : false, hour: '2-digit', minute:'2-digit',
+      weekday: 'short'});
 
     document.getElementById('saa').innerHTML =
-      '<h2 id="saaNimi">'+saaTiedot.name+'&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp'+aika+'</h2>'+
+      '<h2 id="saaNimi">'+saaTiedot.name+'&nbsp&nbsp&nbsp&nbsp'+aika+'</h2>'+
       '<div id="container">'+
       '<div id="ikoni">'+
       '<img src="https://openweathermap.org/img/wn/'+saaTiedot.weather[0].icon+'@2x.png" alt="'+saaTiedot.weather[0].description+'">'+

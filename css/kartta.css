@@ -3,12 +3,11 @@ figure {
     margin-right: -30px;
     margin-left: -30px;
     margin-bottom: 0;
+    line-height: 0;
 }
-
 #paakuva {
     width: 100%;
 }
-
 .maintext {
     max-width: 1000px;
     margin: 30px auto;
@@ -27,17 +26,80 @@ figure {
     margin-top: 30px;
     margin-bottom: 30px;
 }
-
+#container2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 0;
+    margin-left: 0;
+}
 #map {
     display: flex;
     flex-wrap: wrap;
     height: 500px;
-    max-width: 1000px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-right: auto;
+    width: 60%;
+    margin-top: 0;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+#saa {
+    width: 20%;
+    margin: 0;
+}
+#tyhja {
+    width: 20%;
+    margin: 0;
+}
+#saaNimi {
+    text-decoration: underline;
+    position: relative;
+    width: 300px;
     margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+#container {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#ikoni {
+    text-align: center;
+    margin-top: -15px;
+}
+#ikoni p {
+    margin-top: -20px;
+}
+#saaTiedot p{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 20px;
 }
 .infoteksti {
     color: black;
+}
+@media (max-width:1400px) {
+    #container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    #map {
+        display: flex;
+        flex-wrap: wrap;
+        height: 500px;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-top: 30px;
+    }
+    #saa {
+        width: 100%;
+    }
 }
