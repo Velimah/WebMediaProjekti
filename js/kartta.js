@@ -34,7 +34,7 @@ async function initMap() {
           content: '<h3 class="infoteksti">Olet tässä</h3>'
         });
 
-        //Luo kuuntelijan, joka avaa infoikkunan hiiren mennessä merkin päälle.
+        // Luo kuuntelijan, joka avaa infoikkunan hiiren mennessä merkin päälle.
         google.maps.event.addListener(merkki,'mouseover',function() {
           popupIkkuna.open({
             anchor: merkki,
@@ -43,7 +43,7 @@ async function initMap() {
           });
         });
 
-        //Luo kuuntelijan, joka sulkee infoikkunan hiiren mennessä pois merkin päältä.
+        // Luo kuuntelijan, joka sulkee infoikkunan hiiren mennessä pois merkin päältä.
         google.maps.event.addListener(merkki,'mouseout',function() {
           popupIkkuna.close({
             anchor: merkki,
@@ -52,18 +52,20 @@ async function initMap() {
           });
         });
 
-        // kohdistaa kartan nykyiseen sijaintiin.
+        // Kohdistaa kartan nykyiseen sijaintiin.
         map.setCenter(sijainti);
       });
 
-    // Hakee asemat.geojson tiedostosta kaupunkipyöräasemien tiedot.
+    // Hakee rajapinnoista yhdistetystä asemat.geojson tiedostosta kaupunkipyöräasemien tiedot.
+    // API lähde: https://www.opendata.fi/data/fi/dataset/vantaan-kaupunkipyoraasemat,
+    //            https://www.opendata.fi/data/fi/dataset/hsl-n-kaupunkipyoraasemat
     const vastaus = await fetch('data/asemat.geojson');
     if (!vastaus.ok)  {
       return Promise.reject(Error("Hups, rikki meni."));
     }
     const asemat = await vastaus.json();
 
-    //Tulostaa lokiin asemien tiedot.
+    // Tulostaa lokiin asemien tiedot.
     console.log('KaupunkipyoraAsemat', asemat);
 
     // Käy läpi asemalistan koko pituuden.
@@ -91,7 +93,7 @@ async function initMap() {
         content: asemanTiedot,
       });
 
-      //Luo kuuntelijan, joka avaa infoikkunan hiiren mennessä merkin päälle.
+      // Luo kuuntelijan, joka avaa infoikkunan hiiren mennessä merkin päälle.
       google.maps.event.addListener(merkki,'mouseover',function() {
         infoIkkuna.open({
           anchor: merkki,
@@ -100,7 +102,7 @@ async function initMap() {
         });
       });
 
-      //Luo kuuntelijan, joka sulkee infoikkunan hiiren mennessä pois merkin päältä.
+      // Luo kuuntelijan, joka sulkee infoikkunan hiiren mennessä pois merkin päältä.
       google.maps.event.addListener(merkki,'mouseout',function() {
         infoIkkuna.close({
           anchor: merkki,
