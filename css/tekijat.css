@@ -54,11 +54,13 @@
 .sahkoposti a:hover {
     background-color: rgba(255, 255, 255, 0.7);
     color: #0C5E6E;
+    text-shadow: 0 0 1px #0C5E6E;
     text-decoration: underline;
 }
 .puhelin a:hover {
     background-color: rgba(255, 255, 255, 0.7);
     color: #0C5E6E;
+    text-shadow: 0 0 1px #0C5E6E;
     text-decoration: underline;
 }
 #yleiskuvaus {
