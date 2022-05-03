@@ -136,6 +136,10 @@ li {
 .tekstilinkki {
     color: white;
 }
+.tekstilinkki:hover{
+    color: white;
+    text-shadow: 0 0 1px white;
+}
 footer {
     bottom: 0;
     display: flex;

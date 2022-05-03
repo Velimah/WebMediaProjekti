@@ -128,13 +128,19 @@ li {
     box-shadow: 0 0 10px #ccc;
 }
 #menu a:hover {
-    background-color: rgba(255, 255, 255, 0.7);
     color: #0C5E6E;
     text-shadow: 0 0 1px #0C5E6E;
     text-decoration: underline;
 }
 #reittihaku {
     max-width: 1000px;
+}
+.tekstilinkki {
+    color: #0a4d5b;
+}
+.tekstilinkki:hover{
+    color: #0C5E6E;
+    text-shadow: 0 0 1px #0C5E6E;
 }
 footer {
     bottom: 0;
