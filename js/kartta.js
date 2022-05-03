@@ -4,7 +4,7 @@
 async function initMap() {
   try{
 
-    // Luo kartan ja asettaa perusasetukset.
+    // Luo kartan ja asettaa lähtöasetukset.
     const map = new google.maps.Map(document.getElementById("map"), {
       mapTypeId: 'hybrid',
       zoom: 14,
@@ -12,8 +12,7 @@ async function initMap() {
 
     });
 
-    // Hakee käyttäjän koordinaatit, asettaa merkin infoikkunalla kartalle ja luo listenerit hiirelle,
-    // että infoikkuna aukeaa hiiren ollessa merkin päällä.
+    // Hakee käyttäjän koordinaatit.
     navigator.geolocation.getCurrentPosition(
       (position) => {
         const sijainti = {
@@ -23,16 +22,19 @@ async function initMap() {
 
         const locationMark = 'img/redMarker.png';
 
+        // Luo nykyisen sijainnin merkin karttaan käyttäen ylempänä haettuja koordinaatteja.
         const merkki = new google.maps.Marker({
           position: new google.maps.LatLng(sijainti),
           icon: locationMark,
           map: map
         });
 
+        // Luo nykyisen sijainnin merkille infoikkunan.
         const popupIkkuna = new google.maps.InfoWindow({
           content: '<h3 class="infoteksti">Olet tässä</h3>'
         });
 
+        //Luo kuuntelijan, joka avaa infoikkunan hiiren mennessä merkin päälle.
         google.maps.event.addListener(merkki,'mouseover',function() {
           popupIkkuna.open({
             anchor: merkki,
@@ -41,6 +43,7 @@ async function initMap() {
           });
         });
 
+        //Luo kuuntelijan, joka sulkee infoikkunan hiiren mennessä pois merkin päältä.
         google.maps.event.addListener(merkki,'mouseout',function() {
           popupIkkuna.close({
             anchor: merkki,
@@ -49,26 +52,33 @@ async function initMap() {
           });
         });
 
+        // kohdistaa kartan nykyiseen sijaintiin.
         map.setCenter(sijainti);
       });
 
-    // Hakee asemat.geojson tiedostosta kaupunkipyöräasemien tiedot, luo merkit ja infoikkunat jokaiselle asemalle
-    // ja luo listenerit hiirelle, että infoikkunat aukeaa hiiren ollessa merkkien päällä.
+    // Hakee asemat.geojson tiedostosta kaupunkipyöräasemien tiedot.
     const vastaus = await fetch('data/asemat.geojson');
     if (!vastaus.ok)  {
       return Promise.reject(Error("Hups, rikki meni."));
     }
     const asemat = await vastaus.json();
+
+    //Tulostaa lokiin asemien tiedot.
     console.log('KaupunkipyoraAsemat', asemat);
+
+    // Käy läpi asemalistan koko pituuden.
     for (let i = 0; i < asemat.features.length; i++) {
 
       const asemaMerkki = 'img/stationMarker.png';
+
+      // Luo Merkin karttaan käyttäen asemalistalta löytyviä koordinaatteja.
       const merkki = new google.maps.Marker({
         position: new google.maps.LatLng(asemat.features[i].properties.y, asemat.features[i].properties.x),
         icon: asemaMerkki,
         map: map
       });
 
+      // Asemamerkkien infoikkunoiden tekstisisältö.
       const asemanTiedot =
         '<div>' +
         '<h2 class="infoteksti">'+asemat.features[i].properties.Nimi+'</h2>' +
@@ -76,10 +86,12 @@ async function initMap() {
         '<h3 class="infoteksti">Kapasiteetti: '+asemat.features[i].properties.Kapasiteet+'</h3>' +
         '</div>';
 
+      // Luo infoikkunan asemamerkille.
       const infoIkkuna = new google.maps.InfoWindow({
         content: asemanTiedot,
       });
 
+      //Luo kuuntelijan, joka avaa infoikkunan hiiren mennessä merkin päälle.
       google.maps.event.addListener(merkki,'mouseover',function() {
         infoIkkuna.open({
           anchor: merkki,
@@ -88,6 +100,7 @@ async function initMap() {
         });
       });
 
+      //Luo kuuntelijan, joka sulkee infoikkunan hiiren mennessä pois merkin päältä.
       google.maps.event.addListener(merkki,'mouseout',function() {
         infoIkkuna.close({
           anchor: merkki,
@@ -102,28 +115,5 @@ async function initMap() {
   }
 }
 
+// Käynnistää kartan.
 window.initMap = initMap;
-
-/*const apiUrl = 'https://cdn.digitransit.fi/map/v2/:finland-citybike-map/:14/';
-
-const getBikeData = async () => {
-  try {
-    let x = position.coords.longitude;
-    let y = potition.coords.latitude;
-    const response = await fetch(apiUrl +':' + x + '/:' + y + '.pbf');
-
-    if (!response.ok){
-      throw new Error(response.status + response.statusText);
-    }
-
-    console.log('bike', response);
-    const data = await response.json();
-    console.log('bikeData', data);
-
-  } catch (error){
-    console.error('fetch failed', error);
-  } 
-}
-
-getBikeData();*/
-
