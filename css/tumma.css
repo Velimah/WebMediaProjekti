@@ -6,7 +6,6 @@ html{
     margin: 0;
     padding: 0;
 }
-
 * {
     font-family: GalanoClassic,sans-serif;
 }
@@ -16,17 +15,14 @@ body {
     background-color: #404040;
     color: white;
 }
-
 img{
     filter: grayscale(20%);
 }
-
 main {
     margin-top: 150px;
     padding: 30px 30px 0;
     min-height: 69vh;
 }
-
 .vetonappi {
     background-color: #ffffff;
     color: black;
@@ -50,13 +46,11 @@ main {
     box-shadow: 0 0 5px #ffffff;
     color: black;
 }
-
 .vetovalikko {
     position: absolute;
     right: 20px;
     top: 90px;
 }
-
 .sisalto {
     display: none;
     position: absolute;
@@ -66,30 +60,25 @@ main {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
 }
-
 .sisalto a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
-
 .sisalto a:hover {
     background-color: #ffffff;
     color: black;
     box-shadow: 0 0 5px #ffffff;
 }
-
 .vetovalikko:hover .sisalto {
     display: block;
 }
-
 .vetovalikko:hover .vetonappi {
     background-color: #ffffff;
     color: black;
     box-shadow: 0 0 5px #ffffff;
 }
-
 #otsikko{
     text-align: center;
     font-size: 40px;
@@ -99,7 +88,6 @@ ul {
     list-style: none;
     padding: 0;
 }
-
 #valikko {
 
     display: table;
@@ -109,7 +97,6 @@ ul {
     margin-right: auto;
 
 }
-
 #menu {
     margin: 10px;
     width: 100%;
@@ -117,7 +104,6 @@ ul {
     text-align: center;
     text-decoration: none;
 }
-
 li {
     display:block;
     position: relative;
@@ -126,7 +112,6 @@ li {
     margin-left: auto;
     margin-right: auto;
 }
-
 #menu a{
     display:block;
     padding:3px;
@@ -144,7 +129,6 @@ li {
     background-color: rgb(30, 30, 30);
     box-shadow: 0 0 10px rgb(0, 0, 0);
 }
-
 #menu a:hover {
     text-shadow: 0 0 2px rgb(200, 200, 200);
     text-decoration: underline;
@@ -171,19 +155,16 @@ footer img {
     margin-right: auto;
     width: 50px;
 }
-
 .box2 p {
     color: black;
 }
 .box2 h3 {
     color: black;
 }
-
 @media (max-width:800px) {
 #menu   {
     display: none;
 }
-
 }
 @media (min-width:800px) {
     .vetovalikko {

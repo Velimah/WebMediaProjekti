@@ -6,7 +6,6 @@ html {
     margin: 0;
     padding: 0;
 }
-
 * {
     font-family: GalanoClassic,sans-serif;
 }
@@ -17,13 +16,10 @@ body {
     color: black;
 
 }
-
 .dark-mode {
     background-color:rgb(32, 31, 31);
     color: white;
 }
-
-
 main {
     margin-top: 150px;
     min-height: 69vh;
@@ -51,13 +47,11 @@ main {
     background-color: #0C5E6E;
     box-shadow: 0 0 5px #0C5E6E;
 }
-
 .vetovalikko {
     position: absolute;
     right: 20px;
     top: 90px;
 }
-
 .sisalto {
     display: none;
     position: absolute;
@@ -67,39 +61,32 @@ main {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
 }
-
 .sisalto a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
-
 .sisalto a:hover {
     background-color: #15A4C1;
     box-shadow: 0 0 5px #15A4C1;
 }
-
 .vetovalikko:hover .sisalto {
     display: block;
 }
-
 .vetovalikko:hover .vetonappi {
     background-color: #0C5E6E;
     box-shadow: 0 0 5px #0C5E6E;
 }
-
 #otsikko{
     text-align: center;
     font-size: 40px;
     margin: 20px;
 }
-
 ul {
     list-style: none;
     padding: 0;
 }
-
 #valikko {
     display: table;
     margin-top: 0;
@@ -107,7 +94,6 @@ ul {
     margin-left: auto;
     margin-right: auto;
 }
-
 #menu {
     margin: 10px;
     width: 100%;
@@ -115,7 +101,6 @@ ul {
     text-align: center;
     text-decoration: none;
 }
-
 li {
 
     display:block;
@@ -142,18 +127,15 @@ li {
     background-color: #ffffff;
     box-shadow: 0 0 10px #ccc;
 }
-
 #menu a:hover {
     background-color: rgba(255, 255, 255, 0.7);
     color: #0C5E6E;
     text-shadow: 0 0 1px #0C5E6E;
     text-decoration: underline;
 }
-
 #reittihaku {
     max-width: 1000px;
 }
-
 footer {
     bottom: 0;
     display: flex;
@@ -165,7 +147,6 @@ footer {
     background-color: #ffffff;
     box-shadow: 0 0 10px #c9c8c8;
 }
-
 footer img {
     padding-left: 30px;
     padding-right: 30px;
