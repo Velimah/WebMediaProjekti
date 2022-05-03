@@ -6,10 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="index.css" />
   <link href="lightbox2-2.11.3/dist/css/lightbox.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="slideShow.css"/>
   <title>Kaupunkipyörät - Projektin esittelysivu</title>
-</head>
+  </head>
 <body>
 <script src="jquery.js"></script>
+
 
 <main>
 <header>
@@ -23,6 +25,7 @@
 <p>Sami Bäckman</p>
 <p>Veli-Matti Heino</p>
 </section>
+
 
 <section>
 <h2>Sovelluksen yleiskuvaus</h2>
@@ -96,6 +99,41 @@
 </div>
 </section>
 
+
+<section>
+  <h2>Videon kuvakäsikirjoitus</h2>
+  <p>Klikkaa kuvaa isommaksi.</p>
+  <div class="slideshow-container">
+
+    <div class="slidesShow">
+      <div class="slideNumber">1/3</div>
+      <a class="lightbox-link" href="video-img/suunnitelma1.jpg" data-lightbox="image-1" data-title="videon kuvakäsikirjoitus, kuva 1"><img class="image" src="video-img/suunnitelma1.jpg" alt="suunnitelma kuva1"/></a>
+    </div>
+
+    <div class="slidesShow">
+      <div class="slideNumber">2/3</div>
+      <a class="lightbox-link" href="video-img/suunnitelma2.jpg" data-lightbox="image-1" data-title="videon kuvakäsikirjoitus, kuva 2"><img class="image" src="video-img/suunnitelma2.jpg" alt="suunnitelma kuva2"/></a>
+    </div>
+
+    <div class="slidesShow">
+      <div class="slideNumber">3/3</div>
+      <a class="lightbox-link" href="video-img/suunnitelma3.jpg" data-lightbox="image-1" data-title="videon kuvakäsikirjoitus, kuva 3"><img class="image" src="video-img/suunnitelma3.jpg" alt="suunnitelma kuva3"/></a>
+    </div>
+
+    <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlide(1)">&#10095;</a>
+
+  </div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+</section>
+
 <section>
 <h2>Linkki internet-sivuille</h2>
   <p>Etusivu</p>
@@ -104,7 +142,9 @@
   <a href="https://users.metropolia.fi/~velimah/WebMediaProjekti/">https://users.metropolia.fi/~velimah/WebMediaProjekti/</a>
 </section>
 
+
 </main>
 <script src="lightbox2-2.11.3/dist/js/lightbox.js"></script>
+<script src="slides.js"></script>
 </body>
 </html>
