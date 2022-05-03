@@ -73,7 +73,11 @@ figure {
     margin-top: -15px;
 }
 #ikoni p {
-    margin-top: -20px;
+    margin-top: -15px;
+}
+#saaTiedot {
+    padding-top: 5px;
+
 }
 #saaTiedot p{
     margin-top: 3px;
