@@ -6,15 +6,15 @@
     font-family: GalanoClassic,sans-serif;
 }
 body {
-    background-color: rgb(73, 73, 73);
+    background-color: rgb(75, 75, 75);
 }
 main {
-    background-color: rgb(222, 222, 222);
+    background-color: #EBEBEB;
     padding: 30px;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0 0 10px #DEDEDEFF;
+    box-shadow: 0 0 10px #EBEBEB;
 }
 img {
     max-width: 400px;
