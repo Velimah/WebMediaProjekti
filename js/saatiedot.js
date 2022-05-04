@@ -43,9 +43,9 @@ async function Saatiedot() {
       '<p>' + saaTiedot.weather[0].description + '</p>' +
       '</div>' +
       '<div id="saatiedot">' +
-      '<p> Lämpötila: ' + saaTiedot.main.temp + ' C</p>' +
+      '<p> Lämpötila: ' + saaTiedot.main.temp.toFixed(1) + ' C</p>' +
       '<p> Kosteus: ' + saaTiedot.main.humidity + ' %</p>' +
-      '<p> Tuuli: ' + saaTiedot.wind.speed + ' m/s</p>' +
+      '<p> Tuuli: ' + saaTiedot.wind.speed.toFixed(1) + ' m/s</p>' +
       '<p> Paine: ' + saaTiedot.main.pressure + ' hPa</p>' +
       '</div>' +
       '</div>';

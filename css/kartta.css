@@ -66,6 +66,7 @@ figure {
 
 #container {
     display: flex;
+    justify-content: left;
     flex-direction: row;
     width: 300px;
     margin-left: auto;
@@ -78,7 +79,8 @@ figure {
 }
 
 #ikoni p {
-    margin-top: -15px;
+    margin-top: -5px;
+    font-size: 17px;
 }
 
 #saatiedot {
@@ -90,6 +92,7 @@ figure {
     margin-top: 3px;
     margin-bottom: 3px;
     margin-left: 20px;
+    font-size: 17px;
 }
 
 .infoteksti {
