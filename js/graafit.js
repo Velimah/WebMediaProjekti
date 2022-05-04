@@ -49,7 +49,6 @@ async function HaeTilastot() {
 // Käynnistää tilastojen hakemisfunktion. Kommentoitu pois listan suuren koon takia.
 // HaeTilastot();
 
-
 // Luodaan graafi jokaiselle kuukaudelle käyttäen apuna plot.ly kirjastoja. Graafien tiedot sijoitettu valmiiksi
 // yllä olevalla koodilla lasketuista jokaisen kuukauden tuloksista.
 
@@ -203,4 +202,3 @@ if (theme.getAttribute('href') === 'css/style.css') {
   Plotly.newPlot("graafi5", data5, layout5);
 
 }
-

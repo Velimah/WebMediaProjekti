@@ -36,7 +36,7 @@ async function Saatiedot() {
 
     // Luo html elementin, johon sijoitetaan aikamuuttuja, säätiedot, sijainti ja kuva.
     document.getElementById('saa').innerHTML =
-      '<h2 id="saanimi">' + saaTiedot.name + '&nbsp&nbsp' + aika + '</h2>' +
+      '<h2 id="saanimi">' + saaTiedot.name + '&nbsp' + aika + '</h2>' +
       '<div id="container">' +
       '<div id="ikoni">' +
       '<img src="https://openweathermap.org/img/wn/' + saaTiedot.weather[0].icon + '@2x.png" alt="' + saaTiedot.weather[0].description + '">' +
