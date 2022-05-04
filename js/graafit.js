@@ -67,17 +67,18 @@ if (theme.getAttribute('href') === 'css/style.css') {
 
   const layout = {
     title: "Poljetut kilometrit", plot_bgcolor: "rgba(255, 255, 255, 0)",
-    paper_bgcolor: "#rgba(255, 255, 255, 0)"
+    paper_bgcolor: "rgba(255, 255, 255, 0)"
   };
-  Plotly.newPlot("graafi1", data, layout);
+  Plotly.newPlot("graafi1", data, layout, {displayModeBar: false});
 
 } else {
 
   const layout = {
     title: "Poljetut kilometrit", plot_bgcolor: "rgba(255, 255, 255, 0)",
-    paper_bgcolor: "#rgba(255, 255, 255, 0)", font: {color: "#FFFFFF"}
+    paper_bgcolor: "rgba(255, 255, 255, 0)", font: {color: "#FFFFFF"}
   };
-  Plotly.newPlot("graafi1", data, layout);
+  Plotly.newPlot("graafi1", data, layout, {displayModeBar: false});
+
 }
 
 // Luodaan listat kuukausista ja arvoista.
@@ -95,16 +96,16 @@ const data2 = [{
 if (theme.getAttribute('href') === 'css/style.css') {
   const layout2 = {
     title: "Poljetut tunnit", plot_bgcolor: "rgba(255, 255, 255, 0)",
-    paper_bgcolor: "#rgba(255, 255, 255, 0)"
+    paper_bgcolor: "rgba(255, 255, 255, 0)"
   };
+  Plotly.newPlot("graafi2", data2, layout2, {displayModeBar: false});
 
-  Plotly.newPlot("graafi2", data2, layout2);
 } else {
   const layout2 = {
     title: "Poljetut tunnit", plot_bgcolor: "rgba(255, 255, 255, 0)",
-    paper_bgcolor: "#rgba(255, 255, 255, 0)", font: {color: "#FFFFFF"}
+    paper_bgcolor: "rgba(255, 255, 255, 0)", font: {color: "#FFFFFF"}
   };
-  Plotly.newPlot("graafi2", data2, layout2);
+  Plotly.newPlot("graafi2", data2, layout2, {displayModeBar: false});
 
 }
 
@@ -124,17 +125,17 @@ if (theme.getAttribute('href') === 'css/style.css') {
 
   const layout3 = {
     title: "Poljetut matkat", plot_bgcolor: "rgba(255, 255, 255, 0)",
-    paper_bgcolor: "#rgba(255, 255, 255, 0)"
+    paper_bgcolor: "rgba(255, 255, 255, 0)"
   };
-  Plotly.newPlot("graafi3", data3, layout3);
+  Plotly.newPlot("graafi3", data3, layout3, {displayModeBar: false});
 
 } else {
 
   const layout3 = {
     title: "Poljetut matkat", plot_bgcolor: "rgba(255, 255, 255, 0)",
-    paper_bgcolor: "#rgba(255, 255, 255, 0)", font: {color: "#FFFFFF"}
+    paper_bgcolor: "rgba(255, 255, 255, 0)", font: {color: "#FFFFFF"}
   };
-  Plotly.newPlot("graafi3", data3, layout3);
+  Plotly.newPlot("graafi3", data3, layout3, {displayModeBar: false});
 
 }
 
@@ -155,18 +156,18 @@ if (theme.getAttribute('href') === 'css/style.css') {
   const layout4 = {
     title: "Keskimääräinen matkan pituus (m)",
     plot_bgcolor: "rgba(255, 255, 255, 0)",
-    paper_bgcolor: "#rgba(255, 255, 255, 0)"
+    paper_bgcolor: "rgba(255, 255, 255, 0)"
   };
-  Plotly.newPlot("graafi4", data4, layout4);
+  Plotly.newPlot("graafi4", data4, layout4, {displayModeBar: false});
 
 } else {
 
   const layout4 = {
     title: "Keskimääräinen matkan pituus (m)",
     plot_bgcolor: "rgba(255, 255, 255, 0)",
-    paper_bgcolor: "#rgba(255, 255, 255, 0)", font: {color: "#FFFFFF"}
+    paper_bgcolor: "rgba(255, 255, 255, 0)", font: {color: "#FFFFFF"}
   };
-  Plotly.newPlot("graafi4", data4, layout4);
+  Plotly.newPlot("graafi4", data4, layout4, {displayModeBar: false});
 
 }
 
@@ -187,17 +188,17 @@ if (theme.getAttribute('href') === 'css/style.css') {
   const layout5 = {
     title: "Keskimääräinen matkan kesto (min)",
     plot_bgcolor: "rgba(255, 255, 255, 0)",
-    paper_bgcolor: "#rgba(255, 255, 255, 0)"
+    paper_bgcolor: "rgba(255, 255, 255, 0)"
   };
-  Plotly.newPlot("graafi5", data5, layout5);
+  Plotly.newPlot("graafi5", data5, layout5, {displayModeBar: false});
 
 } else {
 
   const layout5 = {
     title: "Keskimääräinen matkan kesto (min)",
     plot_bgcolor: "rgba(255, 255, 255, 0)",
-    paper_bgcolor: "#rgba(255, 255, 255, 0)", font: {color: "#FFFFFF"}
+    paper_bgcolor: "rgba(255, 255, 255, 0)", font: {color: "#FFFFFF"}
   };
-  Plotly.newPlot("graafi5", data5, layout5);
+  Plotly.newPlot("graafi5", data5, layout5, {displayModeBar: false});
 
 }
