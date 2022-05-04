@@ -58,8 +58,8 @@ figure {
 }
 
 #saanimi {
-    font-size: 23px;
     letter-spacing: 1px;
+    font-size: 20px;
     text-decoration: underline;
     position: relative;
     width: 300px;
