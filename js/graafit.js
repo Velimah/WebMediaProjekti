@@ -1,10 +1,9 @@
 "use strict";
 
 
-
 // Hakee huhtikuun matkatiedot 2021-04.json tiedostosta. Tulostaa lokiin tulokset.
 async function HaeTilastot() {
-  try{
+  try {
 
     // API lähde: https://www.opendata.fi/data/fi/dataset/helsingin-ja-espoon-kaupunkipyorilla-ajatut-matkat
     const vastaus = await fetch('data/2021-04.json');
@@ -24,9 +23,9 @@ async function HaeTilastot() {
     }
 
     // Laskee halutut tulokset ja muuttaa ne järkevään muotoon.
-    const kilometrit = Math.trunc(kokonaisMatka/1000);
+    const kilometrit = Math.trunc(kokonaisMatka / 1000);
 
-    const tunnit = Math.trunc(kokonaisKesto/3600);
+    const tunnit = Math.trunc(kokonaisKesto / 3600);
 
     const maara = tiedot.length;
 
@@ -60,9 +59,9 @@ const yArray = [680300, 995542, 1484674, 1452262, 978603, 663766, 416101];
 
 // Sijoitetaan arvot graafiin.
 const data = [{
-  x:xArray,
-  y:yArray,
-  type:"bar"
+  x: xArray,
+  y: yArray,
+  type: "bar"
 }];
 
 // Valitaan oikea graafin ulkoasu nykyisen teeman mukaan ja luodaan graafi.
@@ -70,16 +69,17 @@ if (theme.getAttribute('href') === 'css/style.css') {
 
   const layout = {
     title: "Poljetut kilometrit", plot_bgcolor: "rgba(255, 255, 255, 0)",
-    paper_bgcolor: "#rgba(255, 255, 255, 0)"};
+    paper_bgcolor: "#rgba(255, 255, 255, 0)"
+  };
   Plotly.newPlot("graafi1", data, layout);
 
 } else {
 
-    const layout = {
-      title:"Poljetut kilometrit", plot_bgcolor:"rgba(255, 255, 255, 0)",
-      paper_bgcolor:"#rgba(255, 255, 255, 0)", font: {color: "#FFFFFF"}
-    };
-    Plotly.newPlot("graafi1", data, layout);
+  const layout = {
+    title: "Poljetut kilometrit", plot_bgcolor: "rgba(255, 255, 255, 0)",
+    paper_bgcolor: "#rgba(255, 255, 255, 0)", font: {color: "#FFFFFF"}
+  };
+  Plotly.newPlot("graafi1", data, layout);
 }
 
 // Luodaan listat kuukausista ja arvoista.
@@ -88,9 +88,9 @@ const yArray2 = [83839, 115206, 185796, 179194, 115546, 82208, 0];
 
 // Sijoitetaan arvot graafiin.
 const data2 = [{
-  x:xArray2,
-  y:yArray2,
-  type:"bar"
+  x: xArray2,
+  y: yArray2,
+  type: "bar"
 }];
 
 // Valitaan oikea graafin ulkoasu nykyisen teeman mukaan ja luodaan graafi.
@@ -116,9 +116,9 @@ const yArray3 = [274174, 407338, 611741, 604422, 435784, 319402, 209240];
 
 // Sijoitetaan arvot graafiin.
 const data3 = [{
-  x:xArray3,
-  y:yArray3,
-  type:"bar"
+  x: xArray3,
+  y: yArray3,
+  type: "bar"
 }];
 
 // Valitaan oikea graafin ulkoasu nykyisen teeman mukaan ja luodaan graafi.
@@ -142,13 +142,13 @@ if (theme.getAttribute('href') === 'css/style.css') {
 
 // Luodaan listat kuukausista ja arvoista.
 const xArray4 = ["Huhtikuu", "Toukokuu", "Kesäkuu", "Heinäkuu", "Elokuu", "Syyskuu", "Lokakuu"];
-const yArray4 = [2481 , 2444, 2426, 2402, 2245, 2078, 1988];
+const yArray4 = [2481, 2444, 2426, 2402, 2245, 2078, 1988];
 
 // Sijoitetaan arvot graafiin.
 const data4 = [{
-  x:xArray4,
-  y:yArray4,
-  type:"bar"
+  x: xArray4,
+  y: yArray4,
+  type: "bar"
 }];
 
 // Valitaan oikea graafin ulkoasu nykyisen teeman mukaan ja luodaan graafi.
@@ -178,9 +178,9 @@ const yArray5 = [18, 16, 18, 17, 15, 15, 0];
 
 // Sijoitetaan arvot graafiin.
 const data5 = [{
-  x:xArray5,
-  y:yArray5,
-  type:"bar"
+  x: xArray5,
+  y: yArray5,
+  type: "bar"
 }];
 
 // Valitaan oikea graafin ulkoasu nykyisen teeman mukaan ja luodaan graafi.

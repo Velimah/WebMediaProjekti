@@ -2,7 +2,7 @@
 
 // Google maps initialisaatio.
 async function initMap() {
-  try{
+  try {
 
     // Luo kartan ja asettaa lähtöasetukset.
     const map = new google.maps.Map(document.getElementById("map"), {
@@ -35,7 +35,7 @@ async function initMap() {
         });
 
         // Luo kuuntelijan, joka avaa infoikkunan hiiren mennessä merkin päälle.
-        google.maps.event.addListener(merkki,'mouseover',function() {
+        google.maps.event.addListener(merkki, 'mouseover', function () {
           popupIkkuna.open({
             anchor: merkki,
             map,
@@ -44,7 +44,7 @@ async function initMap() {
         });
 
         // Luo kuuntelijan, joka sulkee infoikkunan hiiren mennessä pois merkin päältä.
-        google.maps.event.addListener(merkki,'mouseout',function() {
+        google.maps.event.addListener(merkki, 'mouseout', function () {
           popupIkkuna.close({
             anchor: merkki,
             map,
@@ -60,7 +60,7 @@ async function initMap() {
     // API lähde: https://www.opendata.fi/data/fi/dataset/vantaan-kaupunkipyoraasemat,
     //            https://www.opendata.fi/data/fi/dataset/hsl-n-kaupunkipyoraasemat
     const vastaus = await fetch('data/asemat.geojson');
-    if (!vastaus.ok)  {
+    if (!vastaus.ok) {
       return Promise.reject(Error("Hups, rikki meni."));
     }
     const asemat = await vastaus.json();
@@ -73,7 +73,7 @@ async function initMap() {
 
       const asemaMerkki = 'img/stationMarker.png';
 
-      // Luo Merkin karttaan käyttäen asemalistalta löytyviä koordinaatteja.
+      // Luo asemamerkin karttaan käyttäen asemalistalta löytyviä koordinaatteja.
       const merkki = new google.maps.Marker({
         position: new google.maps.LatLng(asemat.features[i].properties.y, asemat.features[i].properties.x),
         icon: asemaMerkki,
@@ -83,9 +83,9 @@ async function initMap() {
       // Asemamerkkien infoikkunoiden tekstisisältö.
       const asemanTiedot =
         '<div>' +
-        '<h2 class="infoteksti">'+asemat.features[i].properties.Nimi+'</h2>' +
-        '<h3 class="infoteksti">Osoite: '+asemat.features[i].properties.Osoite+'</h3>' +
-        '<h3 class="infoteksti">Kapasiteetti: '+asemat.features[i].properties.Kapasiteet+'</h3>' +
+        '<h2 class="infoteksti">' + asemat.features[i].properties.Nimi + '</h2>' +
+        '<h3 class="infoteksti">Osoite: ' + asemat.features[i].properties.Osoite + '</h3>' +
+        '<h3 class="infoteksti">Kapasiteetti: ' + asemat.features[i].properties.Kapasiteet + '</h3>' +
         '</div>';
 
       // Luo infoikkunan asemamerkille.
@@ -94,7 +94,7 @@ async function initMap() {
       });
 
       // Luo kuuntelijan, joka avaa infoikkunan hiiren mennessä merkin päälle.
-      google.maps.event.addListener(merkki,'mouseover',function() {
+      google.maps.event.addListener(merkki, 'mouseover', function () {
         infoIkkuna.open({
           anchor: merkki,
           map,
@@ -103,7 +103,7 @@ async function initMap() {
       });
 
       // Luo kuuntelijan, joka sulkee infoikkunan hiiren mennessä pois merkin päältä.
-      google.maps.event.addListener(merkki,'mouseout',function() {
+      google.maps.event.addListener(merkki, 'mouseout', function () {
         infoIkkuna.close({
           anchor: merkki,
           map,
