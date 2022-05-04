@@ -54,4 +54,3 @@ async function Saatiedot() {
     console.log(error2)
   }
 }
-

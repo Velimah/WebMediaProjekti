@@ -1,6 +1,5 @@
 "use strict";
 
-
 // Hakee huhtikuun matkatiedot 2021-04.json tiedostosta. Tulostaa lokiin tulokset.
 async function HaeTilastot() {
   try {
