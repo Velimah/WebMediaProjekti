@@ -3,66 +3,76 @@
     display: flex;
     flex-direction: column;
 }
+
 .cell {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 0;
-    margin-bottom: 30px;
     max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 30px;
     box-shadow: 0 0 10px #ccc;
     background-color: #ffffff;
 }
+
 .box1 {
     height: 200px;
 }
+
 .box2 {
     padding: 40px;
     width: 430px;
 }
+
 .henkilokuva {
     height: 200px;
     width: 200px;
 }
+
 .nimi {
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
 .ammatti {
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
 .puhelin {
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
 .puhelin a {
     text-decoration: none;
     color: #0C5E6E;
 }
+
 .sahkoposti {
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
 .sahkoposti a {
     text-decoration: none;
     color: #0C5E6E;
 }
+
 .sahkoposti a:hover {
     background-color: rgba(255, 255, 255, 0.7);
     color: #0C5E6E;
     text-shadow: 0 0 1px #0C5E6E;
     text-decoration: underline;
 }
+
 .puhelin a:hover {
     background-color: rgba(255, 255, 255, 0.7);
     color: #0C5E6E;
     text-shadow: 0 0 1px #0C5E6E;
     text-decoration: underline;
 }
+
 #yleiskuvaus {
     line-height: 30px;
     max-width: 1000px;
@@ -70,50 +80,58 @@
     margin-right: auto;
     margin-bottom: 30px;
 }
+
 #yleiskuvaus h2 {
     margin-top: 0;
     margin-bottom: 30px;
 }
+
 #yleiskuvaus p {
     margin-top: 0;
     margin-bottom: 30px;
     text-align: justify;
 }
+
 #yleiskuvaus a {
     margin-top: 0;
     margin-bottom: 30px;
 }
-@media (max-width:900px) {
+
+@media (max-width: 900px) {
     .box2 {
         width: 350px;
     }
 }
-@media (max-width:800px) {
+
+@media (max-width: 800px) {
     .box2 {
         width: 250px;
     }
 }
-@media (max-width:605px) {
+
+@media (max-width: 605px) {
     .cell {
         width: 250px;
         flex-direction: column;
         justify-content: start;
     }
-    .henkilokuva{
+
+    .henkilokuva {
         height: 250px;
         width: 250px;
-        margin:0;
-        padding: 0;
-    }
-    .box1{
-        height: 250px;
-        margin:0;
+        margin: 0;
         padding: 0;
     }
 
-    .box2{
+    .box1 {
+        height: 250px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .box2 {
         text-align: center;
-        margin:0;
+        margin: 0;
         padding: 0;
     }
 }

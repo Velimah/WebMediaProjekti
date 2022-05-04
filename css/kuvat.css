@@ -1,44 +1,52 @@
-#kuvat{
+#kuvat {
     display: flex;
     flex-direction: column;
     max-width: 1000px;
     margin: auto;
 }
+
 img {
     max-width: 400px;
 }
-.setti{
+
+.setti {
     margin-bottom: 30px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .setti h2 {
     margin-top: 0;
     margin-bottom: 30px;
 }
+
 .setti p {
     margin-top: 0;
     margin-bottom: 0;
 }
-.teksti{
+
+.teksti {
     padding-left: 30px;
     padding-right: 30px;
     max-width: 540px;
     line-height: 30px;
     text-align: justify;
 }
-@media (max-width:1080px) {
+
+@media (max-width: 1080px) {
     .setti h2 {
         text-align: center;
     }
+
     .teksti {
         padding-top: 30px;
         padding-left: 0;
         padding-right: 0;
     }
 }
+
 @media (max-width: 450px) {
     img {
         max-width: 300px;

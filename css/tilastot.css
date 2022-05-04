@@ -1,15 +1,9 @@
 #teksti {
-    margin-right: auto;
-    margin-left: auto;
     text-align: center;
-    margin-top: 0;
-    margin-bottom: 30px;
+    margin: 0 auto 30px;
 }
+
 .container {
     max-width: 800px;
     margin: 30px auto;
-}
-.containertekijat div {
-    margin: 30px auto;
-    max-width: 100%;
 }

@@ -1,24 +1,18 @@
 #videoteksti {
     max-width: 1000px;
-    margin-top: 0;
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 30px;
     line-height: 30px;
     text-align: justify;
 }
+
 #videoteksti h2 {
-    margin-top: 0;
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 30px;
 }
+
 #videoteksti p {
-    margin-top: 0;
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 30px;
 }
+
 #video {
     max-width: 1000px;
     margin: 30px auto;

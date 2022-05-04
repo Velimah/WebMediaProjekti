@@ -2,27 +2,33 @@
     font-family: GalanoClassic;
     src: url(GalanoClassic-Regular.woff2);
 }
-html{
+
+html {
     margin: 0;
     padding: 0;
 }
+
 * {
-    font-family: GalanoClassic,sans-serif;
+    font-family: GalanoClassic, sans-serif;
 }
+
 body {
     margin: 0;
     padding: 0;
     background-color: #404040;
     color: white;
 }
-img{
+
+img {
     filter: grayscale(20%);
 }
+
 main {
     margin-top: 150px;
     padding: 30px 30px 0;
     min-height: 69vh;
 }
+
 .vetonappi {
     background-color: #ffffff;
     color: black;
@@ -31,6 +37,7 @@ main {
     border: none;
 
 }
+
 #teemanappi {
     position: absolute;
     background-color: #ffffff;
@@ -41,62 +48,70 @@ main {
     left: 20px;
     top: 90px;
 }
+
 .teemacontainer:hover #teemanappi {
     background-color: #ffffff;
     box-shadow: 0 0 10px #ffffff;
     color: black;
 }
+
 .vetovalikko {
     position: absolute;
     right: 20px;
     top: 90px;
 }
+
 .sisalto {
     display: none;
     position: absolute;
     right: 0;
     background-color: #bdbdbd;
     min-width: 140px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
+
 .sisalto a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
+
 .sisalto a:hover {
     background-color: #ffffff;
     color: black;
     box-shadow: 0 0 10px #ffffff;
 }
+
 .vetovalikko:hover .sisalto {
     display: block;
 }
+
 .vetovalikko:hover .vetonappi {
     background-color: #ffffff;
     color: black;
     box-shadow: 0 0 10px #ffffff;
 }
-#otsikko{
+
+#otsikko {
     text-align: center;
     font-size: 40px;
     margin: 20px;
 }
+
 ul {
     list-style: none;
     padding: 0;
 }
+
 #valikko {
 
     display: table;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0px auto;
 
 }
+
 #menu {
     margin: 10px;
     width: 100%;
@@ -104,20 +119,23 @@ ul {
     text-align: center;
     text-decoration: none;
 }
+
 li {
-    display:block;
+    display: block;
     position: relative;
-    width:120px;
-    float:left;
+    width: 120px;
+    float: left;
     margin-left: auto;
     margin-right: auto;
 }
-#menu a{
-    display:block;
-    padding:3px;
+
+#menu a {
+    display: block;
+    padding: 3px;
     color: rgb(200, 200, 200);
     text-decoration: none;
 }
+
 #ylapalkki {
     position: fixed;
     top: 0;
@@ -129,17 +147,21 @@ li {
     background-color: rgb(30, 30, 30);
     box-shadow: 0 0 10px rgb(0, 0, 0);
 }
+
 #menu a:hover {
     text-shadow: 0 0 2px white;
     text-decoration: underline;
 }
+
 .tekstilinkki {
     color: white;
 }
-.tekstilinkki:hover{
+
+.tekstilinkki:hover {
     color: white;
     text-shadow: 0 0 1px white;
 }
+
 footer {
     bottom: 0;
     display: flex;
@@ -159,18 +181,22 @@ footer img {
     margin-right: auto;
     width: 50px;
 }
+
 .box2 p {
     color: black;
 }
+
 .box2 h3 {
     color: black;
 }
-@media (max-width:800px) {
-#menu   {
-    display: none;
+
+@media (max-width: 800px) {
+    #menu {
+        display: none;
+    }
 }
-}
-@media (min-width:800px) {
+
+@media (min-width: 800px) {
     .vetovalikko {
         display: none;
     }
